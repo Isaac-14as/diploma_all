@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: #1e2129; */
+
+  @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap')
+      font-family: 'Golos Text',
+    sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

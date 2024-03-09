@@ -1,0 +1,31 @@
+version: "1.0"
+services:
+  db:
+    image: postgres:15
+    container_name: app_db
+    env_file:
+      - ./server/.env-non-dev
+    ports:
+      - 5432:5432
+
+  diplome:
+    image: diploma_image
+    build:
+      context: ./server/
+    container_name: diploma_app
+    env_file:
+      - ./server/.env-non-dev
+    command: ["/diploma/docker/app.sh"]
+    ports:
+      - 7777:8000
+    depends_on:
+      - db
+  client:
+    image: client_image
+    build:
+      context: ./client/
+    container_name: client_app
+    ports:
+      - 9000:5173
+    depends_on:
+      - diplome
