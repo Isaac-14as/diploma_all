@@ -10,7 +10,10 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+EXPOSE 8000
+
 RUN chmod a+x /diploma/docker/*.sh
+
 
 # CMD ["sh /diploma/docker/app.sh"]
 

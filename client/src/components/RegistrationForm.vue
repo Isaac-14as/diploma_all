@@ -1,6 +1,12 @@
 <script setup>
-import { reactive, watch } from 'vue'
+import { ref, reactive, watch, inject, onMounted } from 'vue'
 import axios from 'axios'
+
+var API_port = import.meta.env.VITE_API_ENDPOINT
+
+
+
+const getAllUsersList = inject('getAllUsersList')
 
 const user = reactive({
   name: '',
@@ -21,6 +27,8 @@ const validationError = reactive({
   password: '',
   form: true
 })
+
+const responseError = ref('')
 
 const validationForm = () => {
   if (
@@ -75,24 +83,30 @@ const createUser = async () => {
   event.preventDefault()
 
   try {
-    const { data } = await axios.post(`https://127.0.0.1:7777/auth/register`, {
+    const { data } = await axios.post(`http://` + API_port + `/auth/register`, {
       name: user.name,
       email: user.email,
       password: user.password,
       role: user.role
     })
+    await getAllUsersList()
+    responseError.value = 'Пользователь успешно создан'
     return data
   } catch (err) {
     console.log(err)
+    responseError.value = err.response.data['detail']
   }
 }
+
+
+
 </script>
 
 <template>
   <form action="" class="registration_form">
     <h1>Регистрация пользователя</h1>
     <div class="input_box">
-      <label class="label_name">Имя</label>
+      <label class="label_name">ФИО</label>
       <input
         class="text_input"
         type="text"
@@ -106,7 +120,7 @@ const createUser = async () => {
       <label class="label_name">Email</label>
       <input
         class="text_input"
-        type="text"
+        type="email"
         v-model="user.email"
         @blur="() => (dirtyFlag.email = true)"
       />
@@ -117,7 +131,7 @@ const createUser = async () => {
       <label class="label_name">Пароль</label>
       <input
         class="text_input"
-        type="text"
+        type="password"
         v-model="user.password"
         @blur="() => (dirtyFlag.password = true)"
       />
@@ -127,14 +141,15 @@ const createUser = async () => {
       <label class="label_name label_role">Права доступа</label>
       <div>
         <input class="radio_input" type="radio" id="staff" value="staff" v-model="user.role" />
-        <label for="staff">Сотрудник</label>
+        <label class="role_type" for="staff">Сотрудник</label>
       </div>
       <div>
         <input class="radio_input" type="radio" id="admin" value="admin" v-model="user.role" />
-        <label for="admin">Администратор</label>
+        <label class="role_type" for="admin">Администратор</label>
       </div>
+      <div class="error_box">{{ responseError }}</div>
     </div>
-    <button @click="createUser" :disabled="validationError.form">
+    <button @click="createUser()" :disabled="validationError.form">
       Зарегистрировать пользователя
     </button>
   </form>
@@ -143,13 +158,21 @@ const createUser = async () => {
 <style scoped>
 .label_name {
   display: block;
+  color: aliceblue;
 }
 .label_role {
   margin-bottom: 10px;
 }
+
+.role_type {
+  color: aliceblue;
+  padding-left: 5px;
+}
+
 h1 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
+  color: aliceblue;
 }
 .registration_form {
   margin-top: 20px;
@@ -213,7 +236,11 @@ button:disabled {
 
 .error_box {
   height: 20px;
-  color: red;
+  color: rgb(255, 115, 115);
   font-size: 15px;
+}
+
+.error_box:nth-child(4) {
+  text-align: center;
 }
 </style>

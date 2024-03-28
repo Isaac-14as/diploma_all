@@ -1,9 +1,14 @@
 <script setup>
-import { ref, reactive, watch } from 'vue'
+import { ref, reactive, watch, inject } from 'vue'
 import axios from 'axios'
 // import { useFetch } from '@vueuse/core'
 
+var API_port = import.meta.env.VITE_API_ENDPOINT
+
 const loginError = ref('')
+
+const current_user = inject('current_user')
+const access_token = inject('access_token')
 
 const user = reactive({
   name: '',
@@ -62,52 +67,34 @@ watch([() => dirtyFlag.password, () => user.password], validationPassword)
 watch([() => dirtyFlag.email, () => user.email], validationForm)
 watch([() => dirtyFlag.password, () => user.password], validationForm)
 
-const createUser = async () => {
+const getMe = async () => {
+  try {
+    const { data } = await axios.get(`http://` + API_port + `/auth/me`, {
+      headers: { Authorization: access_token.value }
+    })
+    current_user.value = data
+    localStorage.user = JSON.stringify(data)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+const loginUser = async () => {
   // убирает перезагрузку страницы
   event.preventDefault()
 
   try {
-    const { data } = await axios.post(
-      `https://127.0.0.1:7777/auth/login`,
-      {
-        email: user.email,
-        password: user.password
-      },
-      // дает возможность устанавливать cookies
-      { withCredentials: true }
-    )
-
-    // localStorage.clear()
-    localStorage.user = JSON.stringify(data)
-
-    // получение данных из localStorage
-    console.log(JSON.parse(localStorage.user))
-
-    // loginError.value = ''
-
-    // надо докрутить cookies
-
-    // document.cookie = 'info=123'
-    // обновление страницы
-    // location.reload()
-    localStorage.user = JSON.stringify(data)
+    const { data } = await axios.post(`http://` + API_port + `/auth/login`, {
+      email: user.email,
+      password: user.password
+    })
+    access_token.value = data['access_token']
+    localStorage.access_token = data['access_token']
+    await getMe()
     return data
   } catch (err) {
-    loginError.value = err.response.data.detail
-  }
-}
-
-const getUsers = async () => {
-  try {
-    const { users } = await axios.get(
-      `https://127.0.0.1:7777/auth/all_users`,
-
-      { withCredentials: true }
-    )
-
-    console.log(users)
-  } catch (err) {
     console.log(err)
+    loginError.value = err.response.data.detail
   }
 }
 </script>
@@ -120,7 +107,7 @@ const getUsers = async () => {
       <label class="label_name">Email</label>
       <input
         class="text_input"
-        type="text"
+        type="email"
         v-model="user.email"
         @blur="() => (dirtyFlag.email = true)"
       />
@@ -131,29 +118,29 @@ const getUsers = async () => {
       <label class="label_name">Пароль</label>
       <input
         class="text_input"
-        type="text"
+        type="password"
         v-model="user.password"
         @blur="() => (dirtyFlag.password = true)"
       />
       <div class="error_box">{{ validationError.password }}</div>
     </div>
     <div class="login_error_box">{{ loginError }}</div>
-    <button @click="createUser" :disabled="validationError.form">Войти</button>
+    <button @click="loginUser" :disabled="validationError.form">Войти</button>
   </form>
-
-  <div @click="getUsers">111111</div>
 </template>
 
 <style scoped>
 .label_name {
   display: block;
+  color: aliceblue;
 }
 .label_role {
   margin-bottom: 10px;
 }
 h1 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
+  color: aliceblue;
 }
 .registration_form {
   margin-top: 20px;
@@ -217,13 +204,13 @@ button:disabled {
 
 .error_box {
   height: 20px;
-  color: red;
+  color: rgb(255, 115, 115);
   font-size: 15px;
 }
 
 .login_error_box {
   height: 20px;
-  color: red;
+  color: rgb(255, 115, 115);
   font-size: 15px;
   margin-bottom: 10px;
 }

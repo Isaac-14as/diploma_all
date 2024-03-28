@@ -7,8 +7,21 @@ from app.users.dao import UsersDAO
 from app.users.models import Users
 from app.exceptions import *
 
+
+# from fastapi import Depends, Request, HTTPException, status
+# from jose import jwt, JWTError
+# from datetime import datetime
+
+# from config import settings
+# from users.dao import UsersDAO
+# from users.models import Users
+# from exceptions import *
+
+
 def get_token(request: Request):
     token = request.cookies.get("app_access_token")
+    if not token:
+        token = request.headers["Authorization"]
     if not token:
         raise TokenAbsentException
     return token

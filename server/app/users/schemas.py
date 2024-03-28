@@ -12,6 +12,11 @@ class SUserBase(BaseModel):
     name: str
     role: str
 
+class SUserBaseId(BaseModel):
+    id: int
+    email: EmailStr
+    name: str
+    role: str
 
 class SUserAuth(SUserBase):
     password: str
@@ -19,3 +24,8 @@ class SUserAuth(SUserBase):
 
 class SUserDB(SUserBase):
     hashed_password: str
+
+ 
+class SUser(BaseModel):
+    name: str
+    role: str

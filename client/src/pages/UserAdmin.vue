@@ -1,0 +1,97 @@
+<script setup>
+import axios from 'axios'
+import { inject, ref, onMounted, reactive, provide } from 'vue'
+
+import UsersList from '@/components/UsersList.vue';
+import RegistrationForm from '@/components/RegistrationForm.vue';
+import ChangeUserForm from '@/components/ChangeUserForm.vue';
+
+var API_port = import.meta.env.VITE_API_ENDPOINT
+const access_token = inject('access_token')
+
+const change_user = reactive({
+  id: NaN,
+  name: '',
+  role: '',
+})
+const page_flag = ref(false)
+const all_users = ref([])
+const users = ref([])
+
+
+
+const getAllUsersList = async () => {
+  console.log('Функция из родительского компонента')
+  if (access_token) {
+    try {
+      const { data } = await axios.get(`http://` + API_port + `/auth/all_users`, {
+        headers: { Authorization: access_token.value }
+      })
+      all_users.value = data
+      users.value = data
+      console.log(data)
+      return data
+    } catch (err) {
+      console.log(err)
+    }
+  }
+}
+
+provide('getAllUsersList', getAllUsersList)
+provide('change_user', change_user)
+provide('page_flag', page_flag)
+provide('all_users', all_users)
+provide('users', users)
+
+const change_page = () => {
+  page_flag.value = true
+}
+
+</script>
+
+<template>
+  <div class="main_box">
+    <UsersList />
+
+    <div class="right_box">
+      <div class="flag" @click="change_page">Добавить</div>
+        <div v-if="page_flag">
+        <RegistrationForm />
+      </div>
+      <div v-else>
+        <ChangeUserForm />
+      </div>
+    </div>
+   
+  </div>
+
+</template>
+
+<style scoped>
+.main_box {
+  display: flex;
+}
+
+.flag {
+  border-radius: 8px;
+  background: #009485;
+  transition: 0.2s;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+.flag:hover {
+  background: #04786c;
+  transition: 0.2s;
+  transition: 0.2s;
+}
+
+
+</style>

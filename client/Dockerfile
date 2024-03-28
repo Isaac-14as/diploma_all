@@ -23,7 +23,9 @@ COPY . .
 # собираем приложение для production с минификацией
 # RUN npm run build
 
-EXPOSE 5173
+# EXPOSE 5173
+
+# EXPOSE 9000
 # CMD [ "http-server", "dist" ]
 
 CMD ["npm", "run", "dev", "--host"]
