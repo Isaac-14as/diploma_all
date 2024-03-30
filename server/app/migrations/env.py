@@ -13,6 +13,7 @@ from app.config import DATABASE_URL
 from app.database import Base
 
 from app.users.models import *
+from app.devices.models import *
 
 
 

@@ -8,23 +8,15 @@ from app.users.models import Users
 from app.exceptions import *
 
 
-# from fastapi import Depends, Request, HTTPException, status
-# from jose import jwt, JWTError
-# from datetime import datetime
-
-# from config import settings
-# from users.dao import UsersDAO
-# from users.models import Users
-# from exceptions import *
-
-
 def get_token(request: Request):
-    token = request.cookies.get("app_access_token")
-    if not token:
-        token = request.headers["Authorization"]
-    if not token:
+    token_cookies = request.cookies.get("app_access_token")
+    token_headers = request.headers.get("Authorization")
+    if token_cookies:
+        return token_cookies
+    elif token_headers:
+        return token_headers
+    else:
         raise TokenAbsentException
-    return token
 
 async def get_current_user(token: str = Depends(get_token)):
     try:
