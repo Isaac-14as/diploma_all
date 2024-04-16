@@ -4,7 +4,7 @@ from app.database import async_session_maker
 
 
 from sqlalchemy import func, select 
-class DevaseDAO(BaseDAO):
+class DevaceDAO(BaseDAO):
     model = Device
 
 

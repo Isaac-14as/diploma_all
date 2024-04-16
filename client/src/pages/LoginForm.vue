@@ -1,7 +1,11 @@
 <script setup>
 import { ref, reactive, watch, inject } from 'vue'
 import axios from 'axios'
+
 // import { useFetch } from '@vueuse/core'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 var API_port = import.meta.env.VITE_API_ENDPOINT
 
@@ -91,10 +95,12 @@ const loginUser = async () => {
     access_token.value = data['access_token']
     localStorage.access_token = data['access_token']
     await getMe()
+    router.push('/mnemo')
     return data
   } catch (err) {
     console.log(err)
-    loginError.value = err.response.data.detail
+    // loginError.value = err.response.data.detail
+    loginError.value = 'Неверный email или пароль'
   }
 }
 </script>
@@ -143,8 +149,6 @@ h1 {
   color: aliceblue;
 }
 .registration_form {
-  margin-top: 20px;
-  margin-left: 100px;
   display: flex;
   flex-direction: column;
   width: 520px;
@@ -213,5 +217,11 @@ button:disabled {
   color: rgb(255, 115, 115);
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+form {
+  /* background: #3bb4b4; */
+  margin: 0 auto;
+  margin-top: 200px;
 }
 </style>

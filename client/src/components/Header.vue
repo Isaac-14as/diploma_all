@@ -1,9 +1,14 @@
 <script setup>
 import { inject } from 'vue'
-
 import axios from 'axios'
 
+// import { useRouter } from 'vue-router'
+
+// const router = useRouter()
+
 var API_port = import.meta.env.VITE_API_ENDPOINT
+
+const sidebar_flag = inject('sidebar_flag')
 
 const current_user = inject('current_user')
 const access_token = inject('access_token')
@@ -20,20 +25,28 @@ const logoutUser = async () => {
     console.log(err)
   }
 }
+
+const sidebarChange = () => {
+  sidebar_flag.value = !sidebar_flag.value
+}
 </script>
 
 <template>
   <header>
-    <router-link to="/users_list">Users</router-link>
-    <div class="logo">123</div>
-    <div class="nav_menu">234234</div>
+    <!-- <img class="logo" src="/src/components/logo.png" /> -->
+    <div class="left_nav_menu">
+      <img src="/icons8-menu.svg" alt="" class="sidebar" @click="sidebarChange" />
+      <router-link to="/mnemo" class="left_link">Мнемосхема</router-link>
+      <router-link to="/user_admin" class="left_link">Управление пользователями</router-link>
+    </div>
+
+    <!-- <div class="nav_menu">234234</div> -->
     <div class="user_name">
       <div class="name">{{ current_user.name }}</div>
-      <div class="symbol" v-if="current_user">|</div>
-      <div v-if="current_user" class="exit" @click="logoutUser"><b>Выйти</b></div>
-      <router-link v-else to="/login" class="exit">Войти</router-link>
+      <div class="symbol">|</div>
+      <router-link to="/" class="exit" @click="logoutUser"><b>Выйти</b></router-link>
+      <!-- <router-link v-else to="/login" class="exit">Войти</router-link> -->
     </div>
-    <div></div>
   </header>
 </template>
 
@@ -41,29 +54,38 @@ const logoutUser = async () => {
 header {
   background: #009485;
   height: 80px;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
+  /* justify-content: space-around; */
   align-items: center;
   font-size: 20px;
 }
 
-.logo {
-  /* background: #40e742; */
-  width: 100px;
+.left_nav_menu {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+.left_link {
+  margin-left: 40px;
 }
 
-.nav_menu {
-  /* background: #4064e7; */
-  width: 1000px;
+.sidebar {
+  cursor: pointer;
+}
+
+.left_link:hover {
+  color: aliceblue;
+  transition: 0.2s;
 }
 
 .user_name {
-  /* background: #d74444; */
-  width: 400px;
   display: flex;
   gap: 10px;
-  align-content: center;
-  justify-content: flex-end;
+  margin-right: 40px;
+  /* justify-content: flex-end; */
 }
 
 .exit {

@@ -1,6 +1,6 @@
 <script setup>
 import axios from 'axios'
-import { inject, ref, onMounted, reactive } from 'vue'
+import { inject, ref, onMounted } from 'vue'
 
 var API_port = import.meta.env.VITE_API_ENDPOINT
 
@@ -14,9 +14,8 @@ const users = inject('users')
 const getAllUsersList = inject('getAllUsersList')
 
 const changePage = () => {
-  page_flag.value = false 
+  page_flag.value = false
 }
-
 
 const deleteUser = async (id) => {
   if (confirm('Вы дествительно хотите удалить пользователя?')) {
@@ -50,7 +49,12 @@ const onChangeSearchInput = async () => {
       all_users.value[i].email.toLowerCase().indexOf(search_text.value.toLowerCase()) != -1
     let role_search =
       all_users.value[i].role.toLowerCase().indexOf(search_text.value.toLowerCase()) != -1
-    if (name_search || email_search || role_search || id_search) {
+    let role_ru =
+      (all_users.value[i].role == 'staff' &&
+        'сотрудник'.indexOf(search_text.value.toLowerCase()) != -1) ||
+      (all_users.value[i].role == 'admin' &&
+        'администратор'.indexOf(search_text.value.toLowerCase()) != -1)
+    if (name_search || email_search || role_search || id_search || role_ru) {
       user_search.push(all_users.value[i])
     }
   }
@@ -58,31 +62,32 @@ const onChangeSearchInput = async () => {
   users.value = user_search
 }
 
-
 const changeUser = async (id, name, role) => {
   change_user.id = id
   change_user.name = name
   change_user.role = role
 }
 
-const patch_user = async () => {
-  console.log('Изменяю пользователя', editable_user.id)
-  try {
-    const { data } = await axios({
-      method: 'patch',
-      url: `http://` + API_port + `/auth/change_user/${editable_user.id}`,
-      data: {
-        name: editable_user.name,
-        role: editable_user.role
-      },
-      headers: { Authorization: access_token.value }
-    })
-    await getAllUsersList()
-    return data
-  } catch (err) {
-    console.log(err)
-  }
-}
+// странно, что не используется
+
+// const patch_user = async () => {
+//   console.log('Изменяю пользователя', editable_user.id)
+//   try {
+//     const { data } = await axios({
+//       method: 'patch',
+//       url: `http://` + API_port + `/auth/change_user/${editable_user.id}`,
+//       data: {
+//         name: editable_user.name,
+//         role: editable_user.role
+//       },
+//       headers: { Authorization: access_token.value }
+//     })
+//     await getAllUsersList()
+//     return data
+//   } catch (err) {
+//     console.log(err)
+//   }
+// }
 
 onMounted(() => getAllUsersList())
 </script>
@@ -99,15 +104,16 @@ onMounted(() => getAllUsersList())
           <div class="user_id">{{ user_i.id }}</div>
           <div class="user_name">{{ user_i.name }}</div>
           <div class="user_email">{{ user_i.email }}</div>
-          <div class="user_role" v-if="user_i.role=='admin'">администратор</div>
-          <div class="user_role" v-if="user_i.role=='staff'">сотрудник</div>
+          <div class="user_role" v-if="user_i.role == 'admin'">администратор</div>
+          <div class="user_role" v-if="user_i.role == 'staff'">сотрудник</div>
         </div>
         <div @click="deleteUser(user_i.id)" class="delete">Удалить</div>
-        <div @click="[changeUser(user_i.id, user_i.name, user_i.role), changePage()]" class="patch">Изменить</div>
+        <div @click="[changeUser(user_i.id, user_i.name, user_i.role), changePage()]" class="patch">
+          Изменить
+        </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <style scoped>
@@ -203,6 +209,8 @@ onMounted(() => getAllUsersList())
   justify-content: center;
   cursor: pointer;
   transition: 0.1s;
+  border-left: 1px solid white;
+  padding-left: 10px;
 }
 
 .patch {
@@ -212,6 +220,7 @@ onMounted(() => getAllUsersList())
   justify-content: center;
   cursor: pointer;
   transition: 0.1s;
+  padding-left: 20px;
 }
 
 .delete:hover,

@@ -28,6 +28,7 @@ class ValueDeviceGet(ValueDeviceBase):
     date_of_collection: datetime.datetime
 
 class DeviceBaseGet(DeviceBase):
+    id: int
     value_device: list[ValueDeviceGet]
 
 

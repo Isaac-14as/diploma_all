@@ -1,4794 +1,10924 @@
-<script setup></script>
+<script setup>
+import { inject } from 'vue'
+
+const readings = inject('readings')
+</script>
 
 <template>
-  <panZoom class="zoom_box">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      version="1.1"
-      width="868px"
-      height="450px"
-      viewBox="-0.5 -0.5 868 450"
-      content='&lt;mxfile host="app.diagrams.net" modified="2024-03-22T18:51:04.485Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="oKzJ9RINwomz-x9wl057" version="24.0.7" type="device"&gt;&#10;  &lt;diagram name="Страница — 1" id="GhiqLwUjPG9SQwxWXDff"&gt;&#10;    &lt;mxGraphModel dx="1259" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0"&gt;&#10;      &lt;root&gt;&#10;        &lt;mxCell id="0" /&gt;&#10;        &lt;mxCell id="1" parent="0" /&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="740" y="116" width="140" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="583" y="116" width="136" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="427" y="116" width="136" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="257" y="116" width="149" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00A5CE;strokeColor=#00A5CE;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="551" y="347" width="314" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-6" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="77" y="276" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="77" y="120" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-7" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="38" y="138" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-8" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="13" y="115" width="212" height="7" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff0d00;strokeColor=#ff0800;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-8"&gt;&#10;          &lt;mxGeometry y="1" width="212" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-10" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-8"&gt;&#10;          &lt;mxGeometry x="63" y="3" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff0d00;strokeColor=#ff0800;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="13" y="209" width="212" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-12" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="22" y="161.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="22" y="75" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-13" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="138" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-14" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="161" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="22" y="161" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-15" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="183" y="162.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="183" y="75" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-16" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="162" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="183" y="162" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-17" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="151" y="276" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="151" y="181" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-18" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="132" y="210" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="132" y="181" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-19" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="151.5" y="181" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="131.5" y="181" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="44" y="118" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="205" y="118" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="44" y="211" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-23" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="131" y="211" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="205" y="211" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-25" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="76.9" y="275.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="86" y="293" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-26" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="150.9" y="275.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="160" y="293" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-27" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="26" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-28" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="73" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-29" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="136" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-30" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="254" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-31" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="316" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-32" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="379" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-33" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="442" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-34" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="38" y="170" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-35" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="199" y="138" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-36" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="199" y="170" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-37" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="449" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-38" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="179" y="464" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="179" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-39" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="14" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="14" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-40" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E027;strokeColor=#E0E027;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="18" y="469" width="452" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-41" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="32" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-42" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="79" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-43" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="142" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-44" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="260" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-45" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="323" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-46" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="386" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-47" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="448" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-48" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E027;strokeColor=#E0E027;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="18" y="382" width="452" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-49" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="367" y="448.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="367" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-50" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="430" y="448" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="430" y="275" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-51" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="32" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-52" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="79" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-53" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="142" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-54" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="178" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-55" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="260" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-56" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="323" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-57" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="386" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-58" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="448" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-59" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="245" y="508.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-60" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="308" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="308" y="508.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-61" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="13.5" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="65" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-62" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="13.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-63" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="123.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-64" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="244.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-65" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="307.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="323" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-66" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="367.5" y="448" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="448" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-67" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="429.5" y="448" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="448" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-68" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="398" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-69" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="461" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="461" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-70" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="386" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-71" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="449" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-72" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="324" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="324" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-73" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="261" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-74" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="190" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="190" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-75" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="143" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-76" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="80" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="80" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-77" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="33" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-78" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="335" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="335" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-79" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="273" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="273" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-80" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="155" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="155" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-81" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="92" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="92" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-82" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-83" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="178.5" y="464" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206.5" y="464" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-84" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="124" y="341" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-85" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="32.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-86" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="79.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="92.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-87" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="142.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="155.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-88" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="189.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-89" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="260.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="273.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-90" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="323.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="335.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-91" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="385.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-92" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="448.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="461.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-93" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="32.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-94" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="79.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="92.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-95" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="142.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="155.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-96" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="260.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="273.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-97" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="322.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="335.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-98" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="385.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-99" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="448.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="461.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-100" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E027;strokeColor=#E0E027;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="18" y="347" width="454" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-101" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="142" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-102" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="189" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-103" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="79" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-104" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="32" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-105" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="260" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-106" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="323" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-107" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="385" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-108" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="448" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-109" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="333" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="124" y="298.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-110" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="341.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="128" y="337" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-111" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="333" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="128" y="337.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-112" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="141" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-113" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="65" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-114" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-113"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-115" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-113"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-116" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="140" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-117" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-116"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-118" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-116"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-119" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="136" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-120" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#E0E027;container=0;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-119"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-121" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-119"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-122" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-119"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-123" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-119"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-124" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-119"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-125" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="60" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-126" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-125"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-127" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-125"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-128" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-125"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-129" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-125"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-130" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#E0E027;container=0;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-125"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-131" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="366.5" y="267" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="791" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-132" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="429.5" y="275" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="598" y="275" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-133" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="587" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-134" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-133"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-135" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-133"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-136" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="780" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-137" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-136"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-138" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-136"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-139" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="571" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-140" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="622" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-141" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="673" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-142" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="724" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-143" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="838" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-144" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="787" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-145" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="547" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="547" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-146" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-147" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="794" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-148" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="845" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-149" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="389" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-150" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;endFill=0;startArrow=open;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="629" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-151" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;endFill=0;startArrow=open;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="680" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-152" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;endFill=0;startArrow=open;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="731" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-153" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-154" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="629" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-155" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="680" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-156" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="731" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-157" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="794" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-158" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="845" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-159" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="449" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-160" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="386" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-161" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="323" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="323" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-162" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="261" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-163" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="143" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-164" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="80" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="80" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-165" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="33" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-166" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="386" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-167" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="323" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="323" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-168" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="261" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-169" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-170" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="199" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-171" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="464" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-172" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="143" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-173" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="80" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="80" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-174" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="33" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-175" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="872" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="872" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-176" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-177" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="641" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="641" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-178" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="692" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="692" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-179" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="743" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="743" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-180" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="857" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="857" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-181" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="546.5" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578.5" y="476" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-182" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-183" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="641.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-184" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="692.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-185" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="743.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-186" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="857.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-187" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="766.5" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794.5" y="476" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-188" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="844.5" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="872.5" y="476" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-189" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-190" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="577.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-191" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="629" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-192" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="628.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="641.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-193" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="680" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-194" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="731" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-195" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="782" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="782" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-196" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="845" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-197" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="679.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="692.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-198" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="730.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="743.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-199" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="781.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-200" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="844.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="857.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-201" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="546.5" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="587" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-202" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="802" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="872.5" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-203" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00A5CE;strokeColor=#00A5CE;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="551" y="383" width="314" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-204" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="577" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-205" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="628" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-206" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="679" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-207" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="679" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-208" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="628" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-209" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="577" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-210" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="730" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-211" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="730" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-212" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="766" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-213" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="844" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-214" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="844" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-215" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="781" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-216" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="170" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="152" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-217" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="209" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="184" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-218" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="209" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="184" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-219" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="170" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="152" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-220" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="138" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-221" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="597.9" y="274.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="607" y="292" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-222" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="582" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-223" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#00a5ce;container=0;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-222"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-224" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-222"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-225" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-222"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-226" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-222"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-227" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-222"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-228" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="790.9" y="274.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="800" y="292" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-229" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="775" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-230" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#00a5ce;container=0;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-229"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-231" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-229"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-232" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-229"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-233" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-229"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-234" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-229"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-235" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="791" y="275" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="791" y="267.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-236" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="260" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-237" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-238" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-239" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-240" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-241" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-242" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-243" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-244" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-245" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-246" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-247" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-236"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-248" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="307" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-249" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-250" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-251" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-252" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-253" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-254" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-255" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-256" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-257" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-258" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-259" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-248"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-260" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="354" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-261" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-262" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-263" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-264" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-265" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-266" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-267" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-268" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-269" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-270" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-271" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-260"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-272" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="393" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-273" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-274" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-275" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-276" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-277" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-278" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-279" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-280" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-281" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-282" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-283" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-272"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-284" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="429" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-285" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-286" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-287" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-288" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-289" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-290" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-291" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-292" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-293" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-294" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-295" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-284"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-296" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="460" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-297" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-298" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-299" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-300" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-301" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-302" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-303" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-304" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-305" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-306" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-307" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-296"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-308" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="507" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-309" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-310" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-311" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-312" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-313" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-314" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-315" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-316" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-317" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-318" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-319" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-308"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-320" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="550" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-321" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-322" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-323" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-324" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-325" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-326" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-327" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-328" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-329" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-330" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-331" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-320"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-332" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="585" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-333" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-334" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-335" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-336" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-337" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-338" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-339" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-340" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-341" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-342" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-343" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-332"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-344" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="621" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-345" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-346" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-347" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-348" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-349" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-350" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-351" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-352" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-353" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-354" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-355" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-344"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-356" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="664" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-357" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-358" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-359" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-360" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-361" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-362" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-363" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-364" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-365" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-366" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-367" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-356"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-368" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="707" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-369" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-370" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-371" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-372" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-373" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-374" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-375" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-376" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-377" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-378" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-379" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-368"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-380" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="742" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-381" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-382" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-383" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-384" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-385" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-386" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-387" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-388" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-389" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-390" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-391" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-380"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-392" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="782" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-393" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-394" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-395" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-396" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-397" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-398" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-399" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-400" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-401" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-402" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-403" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-392"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-404" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="825" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-405" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-406" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-407" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-408" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-409" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-410" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-411" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-412" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-413" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-414" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-415" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-404"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-416" value="" style="group" vertex="1" connectable="0" parent="1"&gt;&#10;          &lt;mxGeometry x="864" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-417" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" vertex="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-418" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-419" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-420" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-421" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-422" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-423" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-424" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-425" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-426" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-427" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="w8pojtpbMd08XiHYi6Gj-416"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-428" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="265" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="265" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-429" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="312" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="312" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-430" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="398" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-431" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="434" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="434" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-432" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="465" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="465" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-433" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="555" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="555" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-434" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-435" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="626" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="626" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-436" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="712" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="712" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-437" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="747" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="747" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-438" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="787" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="787" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-439" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="359" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="359" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-440" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="512" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="512" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-441" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="669" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="669" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-442" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="830" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="830" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-443" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="265" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="265" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-444" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="312" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="312" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-445" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="359" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="359" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-446" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="398" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-447" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="434" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="434" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-448" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="465" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="465" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-449" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="512" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="512" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-450" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="555" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="555" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-451" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-452" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="626" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="626" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-453" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="669" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="669" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-454" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="712" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="712" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-455" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="747" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="747" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-456" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="787" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="787" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-457" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="830" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="830" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-458" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="869" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="869" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-459" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="296.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="264.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-460" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="296" y="256" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="296" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-461" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="339" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="339" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-462" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="434.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="397.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-463" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="339.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="311.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-464" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="492.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="464.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-465" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="492" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="492" y="71" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-466" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="554.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-467" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="251" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="653" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-468" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="252" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-469" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="869" y="255" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="869" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-470" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="869.5" y="256" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="295.5" y="256" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-471" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="747.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="711.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-472" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="625.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-473" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="787.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="766.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-474" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653.5" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="597.5" y="330" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-475" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="791.5" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="766.5" y="330" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-476" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="271" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-477" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="653" y="271" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-478" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="598" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="598" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-479" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="791" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="791" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-480" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="272" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-481" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="259" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="254" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-482" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="263" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="268" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-483" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="250" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="255" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-484" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="263.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="653" y="258" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-485" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="250" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="255" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-486" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="259" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="254" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-487" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="263" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="268" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-488" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="272" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-489" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="263.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="258" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-490" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="237" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="237" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-491" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="338" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="245" y="82.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-492" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="339.5" y="79" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="236.5" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-493" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="492.5" y="71" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="244.5" y="71" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-494" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="74.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="245" y="71" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-495" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="74" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="249" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-496" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="83" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="249" y="78" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-497" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="151" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="151" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-498" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="76" y="338" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="76" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-499" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="237.5" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="150.5" y="330" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-500" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" edge="1" parent="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245.5" y="338" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="75.5" y="338" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-501" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="264" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-502" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="311" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-503" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="358" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-504" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="397" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-505" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="433" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-506" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="464" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-507" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="511" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-508" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="554" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-509" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="589" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-510" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="625" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-511" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="668" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-512" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="711" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-513" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="746" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-514" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="786" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-515" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="829" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-516" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1"&gt;&#10;          &lt;mxGeometry x="868" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;      &lt;/root&gt;&#10;    &lt;/mxGraphModel&gt;&#10;  &lt;/diagram&gt;&#10;&lt;/mxfile&gt;&#10;'
-    >
-      <defs />
+  <!-- <panZoom class="zoom_box"> -->
+  <!-- <div class="mnemo_box"> -->
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    width="945px"
+    height="487px"
+    viewBox="-0.5 -0.5 945 487"
+    content='&lt;mxfile host="app.diagrams.net" modified="2024-04-11T16:03:53.423Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="nLE-2m-sN62gZQgFINN_" version="24.2.3" type="device"&gt;&#10;  &lt;diagram name="Страница — 1" id="GhiqLwUjPG9SQwxWXDff"&gt;&#10;    &lt;mxGraphModel dx="2022" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0"&gt;&#10;      &lt;root&gt;&#10;        &lt;mxCell id="0" /&gt;&#10;        &lt;mxCell id="1" parent="0" /&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="740" y="116" width="140" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="583" y="116" width="136" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="427" y="116" width="136" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7601AD;strokeColor=#7601AD;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="257" y="116" width="149" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00A5CE;strokeColor=#00A5CE;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="551" y="347" width="314" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-6" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="77" y="276" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="77" y="120" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-7" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="38" y="138" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-8" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="13" y="115" width="212" height="7" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff0d00;strokeColor=#ff0800;" parent="w8pojtpbMd08XiHYi6Gj-8" vertex="1"&gt;&#10;          &lt;mxGeometry y="1" width="212" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-10" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="w8pojtpbMd08XiHYi6Gj-8" vertex="1"&gt;&#10;          &lt;mxGeometry x="63" y="3" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff0d00;strokeColor=#ff0800;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="13" y="209" width="212" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-12" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="22" y="161.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="22" y="75" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-13" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="138" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-14" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="161" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="22" y="161" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-15" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="183" y="162.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="183" y="75" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-16" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="162" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="183" y="162" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-17" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="151" y="276" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="151" y="181" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-18" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="132" y="210" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="132" y="181" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-19" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="151.5" y="181" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="131.5" y="181" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="44" y="118" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="205" y="118" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="44" y="211" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-23" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="131" y="211" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="205" y="211" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-25" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="76.9" y="275.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="86" y="293" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-26" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="150.9" y="275.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="160" y="293" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-27" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="26" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-28" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="73" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-29" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="136" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-30" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="254" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-31" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="316" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-32" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="379" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-33" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="442" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-34" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="38" y="170" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-35" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="199" y="138" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-36" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#ff0000;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="199" y="170" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-37" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="449" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-38" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="179" y="464" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="179" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-39" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="14" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="14" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-40" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E027;strokeColor=#E0E027;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="18" y="469" width="452" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-41" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="32" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-42" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="79" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-43" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="142" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-44" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="260" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-45" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="323" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-46" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="386" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-47" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="448" y="471" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-48" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E027;strokeColor=#E0E027;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="18" y="382" width="452" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-49" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="367" y="448.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="367" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-50" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="430" y="448" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="430" y="275" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-51" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="32" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-52" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="79" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-53" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="142" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-54" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="178" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-55" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="260" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-56" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="323" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-57" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="386" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-58" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="448" y="384" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-59" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="245" y="508.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-60" value="" style="endArrow=open;html=1;rounded=0;endFill=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="308" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="308" y="508.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-61" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="13.5" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="65" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-62" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="13.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-63" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="123.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-64" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="244.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-65" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="307.5" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="323" y="449" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-66" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="367.5" y="448" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="448" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-67" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="429.5" y="448" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="448" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-68" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="398" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-69" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="461" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="461" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-70" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="386" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-71" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="449" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-72" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="324" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="324" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-73" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="261" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-74" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="190" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="190" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-75" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="143" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-76" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="80" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="80" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-77" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="33" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="352" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-78" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="335" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="335" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-79" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="273" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="273" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-80" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="155" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="155" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-81" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="92" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="92" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-82" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-83" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="178.5" y="464" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206.5" y="464" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-84" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="449" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="124" y="341" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-85" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="32.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-86" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="79.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="92.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-87" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="142.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="155.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-88" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="189.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-89" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="260.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="273.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-90" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="323.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="335.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-91" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="385.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-92" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="448.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="461.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-93" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="32.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-94" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="79.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="92.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-95" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="142.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="155.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-96" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="260.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="273.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-97" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="322.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="335.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-98" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="385.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-99" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="448.5" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="461.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-100" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E027;strokeColor=#E0E027;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="18" y="347" width="454" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-101" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="142" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-102" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="189" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-103" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="79" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-104" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="32" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-105" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="260" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-106" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="323" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-107" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="385" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-108" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="448" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-109" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="333" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="124" y="298.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-110" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="341.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="128" y="337" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-111" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="333" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="128" y="337.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-112" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="124" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="141" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-113" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="65" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-114" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" parent="w8pojtpbMd08XiHYi6Gj-113" vertex="1"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-115" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" parent="w8pojtpbMd08XiHYi6Gj-113" vertex="1"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-116" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="140" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-117" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" parent="w8pojtpbMd08XiHYi6Gj-116" vertex="1"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-118" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" parent="w8pojtpbMd08XiHYi6Gj-116" vertex="1"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-119" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="136" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-120" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#E0E027;container=0;" parent="w8pojtpbMd08XiHYi6Gj-119" vertex="1"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-121" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-119" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-122" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-119" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-123" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-119" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-124" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-119" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-125" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="60" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-126" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-125" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-127" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-125" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-128" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-125" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-129" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="w8pojtpbMd08XiHYi6Gj-125" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-130" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#E0E027;container=0;" parent="w8pojtpbMd08XiHYi6Gj-125" vertex="1"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-131" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="366.5" y="267" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="791" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-132" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="429.5" y="275" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="598" y="275" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-133" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="587" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-134" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" parent="w8pojtpbMd08XiHYi6Gj-133" vertex="1"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-135" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" parent="w8pojtpbMd08XiHYi6Gj-133" vertex="1"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-136" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="780" y="304" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-137" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#7601ad;" parent="w8pojtpbMd08XiHYi6Gj-136" vertex="1"&gt;&#10;          &lt;mxGeometry width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-138" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7601AD;direction=north;" parent="w8pojtpbMd08XiHYi6Gj-136" vertex="1"&gt;&#10;          &lt;mxGeometry x="8" y="8" width="6" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-139" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="571" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-140" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="622" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-141" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="673" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-142" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="724" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-143" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="838" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-144" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00A5CE;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="787" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-145" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="547" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="547" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-146" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-147" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="794" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-148" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="845" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-149" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="389" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-150" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;endFill=0;startArrow=open;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="629" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-151" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;endFill=0;startArrow=open;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="680" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-152" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;endFill=0;startArrow=open;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="731" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-153" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-154" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="629" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-155" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="680" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-156" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="731" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-157" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="794" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-158" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="845" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-159" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="449" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="449" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-160" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="386" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-161" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="323" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="323" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-162" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="261" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-163" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="143" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-164" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="80" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="80" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-165" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="33" y="469" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-166" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="386" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="386" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-167" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="323" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="323" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-168" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="261" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="261" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-169" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-170" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#E0E027;gradientColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="199" y="417" width="14" height="14" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-171" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="464" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="431" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-172" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="143" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="143" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-173" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="80" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="80" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-174" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="33" y="417" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="33" y="388" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-175" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="872" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="872" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-176" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-177" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="641" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="641" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-178" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="692" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="692" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-179" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="743" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="743" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-180" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="857" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="857" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-181" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="546.5" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578.5" y="476" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-182" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-183" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="641.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-184" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="692.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-185" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="743.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-186" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="409" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="857.5" y="409" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-187" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="766.5" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794.5" y="476" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-188" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="844.5" y="476" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="872.5" y="476" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-189" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="578" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="578" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-190" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="577.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-191" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="629" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="629" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-192" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="628.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="641.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-193" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="680" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="680" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-194" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="731" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="731" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-195" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="782" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="782" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-196" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="845" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="845" y="353" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-197" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="679.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="692.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-198" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="730.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="743.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-199" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="781.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="794.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-200" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="844.5" y="373" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="857.5" y="373" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-201" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="546.5" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="587" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-202" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00A5CE;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="802" y="299" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="872.5" y="299" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-203" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00A5CE;strokeColor=#00A5CE;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="551" y="383" width="314" height="6" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-204" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="577" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-205" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="628" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-206" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="679" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-207" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="679" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-208" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="628" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-209" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="577" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-210" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="730" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-211" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="730" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-212" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="766" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-213" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="844" y="385" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-214" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="844" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-215" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="781" y="349" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-216" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="170" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="152" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-217" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="45" y="209" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="45" y="184" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-218" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="209" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="184" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-219" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="170" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="152" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-220" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#ff0000;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="206" y="138" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="206" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-221" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="597.9" y="274.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="607" y="292" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-222" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="582" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-223" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#00a5ce;container=0;" parent="w8pojtpbMd08XiHYi6Gj-222" vertex="1"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-224" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-222" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-225" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-222" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-226" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-222" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-227" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-222" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-228" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="790.9" y="274.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="800" y="292" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-229" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="775" y="283" width="29" height="36.5" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-230" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fillColor=none;strokeColor=#00a5ce;container=0;" parent="w8pojtpbMd08XiHYi6Gj-229" vertex="1"&gt;&#10;          &lt;mxGeometry x="5" y="5" width="22" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-231" value="" style="endArrow=none;html=1;rounded=0;startArrow=classicThin;startFill=1;fillColor=#fff2cc;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-229" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="29" as="sourcePoint" /&gt;&#10;            &lt;mxPoint y="36.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-232" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-229" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="12" y="13" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-233" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-229" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="15" y="17" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="20" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-234" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#00a5ce;" parent="w8pojtpbMd08XiHYi6Gj-229" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="16" y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="16" y="17" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-235" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E0E027;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="791" y="275" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="791" y="267.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-236" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="260" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-237" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-238" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-239" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-240" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-241" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-242" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-243" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-244" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-245" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-246" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-247" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-236" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-248" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="307" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-249" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-250" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-251" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-252" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-253" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-254" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-255" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-256" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-257" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-258" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-259" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-248" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-260" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="354" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-261" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-262" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-263" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-264" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-265" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-266" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-267" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-268" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-269" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-270" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-271" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-260" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-272" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="393" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-273" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-274" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-275" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-276" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-277" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-278" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-279" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-280" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-281" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-282" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-283" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-272" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-284" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="429" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-285" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-286" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-287" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-288" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-289" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-290" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-291" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-292" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-293" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-294" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-295" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-284" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-296" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="460" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-297" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-298" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-299" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-300" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-301" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-302" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-303" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-304" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-305" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-306" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-307" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-296" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-308" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="507" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-309" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-310" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-311" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-312" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-313" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-314" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-315" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-316" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-317" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-318" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-319" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-308" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-320" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="550" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-321" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-322" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-323" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-324" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-325" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-326" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-327" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-328" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-329" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-330" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-331" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-320" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-332" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="585" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-333" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-334" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-335" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-336" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-337" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-338" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-339" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-340" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-341" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-342" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-343" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-332" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-344" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="621" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-345" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-346" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-347" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-348" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-349" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-350" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-351" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-352" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-353" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-354" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-355" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-344" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-356" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="664" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-357" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-358" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-359" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-360" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-361" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-362" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-363" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-364" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-365" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-366" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-367" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-356" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-368" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="707" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-369" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-370" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-371" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-372" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-373" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-374" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-375" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-376" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-377" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-378" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-379" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-368" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-380" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="742" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-381" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-382" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-383" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-384" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-385" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-386" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-387" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-388" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-389" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-390" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-391" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-380" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-392" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="782" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-393" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-394" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-395" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-396" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-397" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-398" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-399" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-400" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-401" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-402" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-403" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-392" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-404" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="825" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-405" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-406" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-407" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-408" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-409" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-410" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-411" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-412" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-413" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-414" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-415" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-404" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-416" value="" style="group" parent="1" vertex="1" connectable="0"&gt;&#10;          &lt;mxGeometry x="864" y="148" width="10" height="28" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-417" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=none;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" vertex="1"&gt;&#10;          &lt;mxGeometry y="9" width="10" height="10" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-418" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="9" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-419" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="3" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="7" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-420" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="7" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="3" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-421" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="4" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-422" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="4" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-423" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="5" y="19" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-424" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="25" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="21" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-425" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="21" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="25" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-426" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="4.800000000000011" y="28" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="10" y="24" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-427" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="w8pojtpbMd08XiHYi6Gj-416" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint y="24" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="5.199999999999989" y="28" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-428" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="265" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="265" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-429" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="312" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="312" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-430" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="398" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-431" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="434" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="434" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-432" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="465" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="465" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-433" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="555" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="555" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-434" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-435" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="626" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="626" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-436" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="712" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="712" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-437" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="747" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="747" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-438" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="787" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="787" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-439" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="359" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="359" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-440" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="512" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="512" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-441" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="669" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="669" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-442" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;startArrow=blockThin;startFill=0;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="830" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="830" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-443" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="265" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="265" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-444" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="312" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="312" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-445" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="359" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="359" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-446" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="398" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="398" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-447" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="434" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="434" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-448" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="465" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="465" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-449" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="512" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="512" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-450" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="555" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="555" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-451" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="590" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-452" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="626" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="626" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-453" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="669" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="669" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-454" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="712" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="712" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-455" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="747" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="747" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-456" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="787" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="787" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-457" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="830" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="830" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-458" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="869" y="148" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="869" y="121" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-459" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="296.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="264.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-460" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="296" y="256" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="296" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-461" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="339" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="339" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-462" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="434.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="397.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-463" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="339.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="311.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-464" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="492.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="464.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-465" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="492" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="492" y="71" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-466" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="590.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="554.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-467" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="251" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="653" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-468" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="252" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-469" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="869" y="255" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="869" y="176" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-470" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="869.5" y="256" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="295.5" y="256" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-471" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="747.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="711.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-472" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="625.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-473" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="787.5" y="212" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="766.5" y="212" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-474" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653.5" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="597.5" y="330" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-475" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="791.5" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="766.5" y="330" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-476" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="271" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-477" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="653" y="271" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-478" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="598" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="598" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-479" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="791" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="791" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-480" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="272" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-481" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="259" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="254" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-482" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="263" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="268" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-483" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="250" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="657" y="255" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-484" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="653" y="263.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="653" y="258" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-485" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="250" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="255" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-486" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="259" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="254" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-487" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="263" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="268" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-488" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="272" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="771" y="267" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-489" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="767" y="263.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="767" y="258" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-490" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="237" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="237" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-491" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="338" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="245" y="82.5" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-492" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="339.5" y="79" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="236.5" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-493" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="492.5" y="71" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="244.5" y="71" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-494" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="74.5" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="245" y="71" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-495" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="74" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="249" y="79" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-496" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245" y="83" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="249" y="78" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-497" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="151" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="151" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-498" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="76" y="338" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="76" y="326" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-499" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="237.5" y="330" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="150.5" y="330" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-500" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#7601AD;" parent="1" edge="1"&gt;&#10;          &lt;mxGeometry width="50" height="50" relative="1" as="geometry"&gt;&#10;            &lt;mxPoint x="245.5" y="338" as="sourcePoint" /&gt;&#10;            &lt;mxPoint x="75.5" y="338" as="targetPoint" /&gt;&#10;          &lt;/mxGeometry&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-501" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="264" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-502" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="311" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-503" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="358" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-504" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="397" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-505" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="433" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-506" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="464" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-507" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="511" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-508" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="554" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-509" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="589" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-510" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="625" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-511" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="668" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-512" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="711" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-513" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="746" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-514" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="786" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-515" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="829" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="w8pojtpbMd08XiHYi6Gj-516" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="868" y="118.16" width="2" height="2" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="13" y="123" width="47" height="85" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="173" y="123" width="47" height="85" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="11" y="353" width="47" height="115" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-4" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВЛ 500 кВ №2&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="156.5" y="50" width="80" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-7" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВЛ 500 кВ №1&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-5.5" y="50" width="80" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-10" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.2&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.4&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="189" y="71" width="31" height="39" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-12" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-20" y="122" width="20" height="20" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-13" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;2 СШ 500 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-58" y="100" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-14" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;1 СШ 500 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-58" y="190" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-15" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-20" y="212" width="20" height="20" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-16" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;1 СШ 220 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-58" y="329" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-17" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;2 СШ 220 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-58" y="360" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-18" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ОСШ 220 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-50" y="455" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-20" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;АТ-2&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="69" y="205" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-22" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;АТ-1&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="142" y="205" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-24" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;220.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-28" y="350" width="27" height="12" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-25" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;220.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="-28" y="381" width="27" height="12" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-26" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="21" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-27" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="68" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-28" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="124" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-29" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="180" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-30" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="249" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-31" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="311" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-32" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="375" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-33" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="440" y="476" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-34" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-2&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="15" y="497" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-35" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ОВ 220 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="51" y="497" width="60" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-36" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-1&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="118" y="497" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-37" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ШСВ 220 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="160" y="497" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-38" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВЛ 220 кВ №1&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="210" y="499" width="80" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-39" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВЛ 220 кВ №2&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="278" y="499" width="80" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-41" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-4&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="370" y="497" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-42" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-3&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="435" y="497" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-43" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;1 СШ 110 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="483" y="329" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-44" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;2 СШ 110 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="483" y="367" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-46" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;110.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="514" y="391" width="27" height="12" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-47" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;110.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="514" y="351" width="27" height="12" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-48" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="548" y="481" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-51" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="613" y="481" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-52" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="664" y="481" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-53" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="716" y="481" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-54" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="766" y="481" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-55" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="841" y="481" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-56" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="64" y="353" width="36" height="115" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-57" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="112" y="353" width="47" height="115" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-58" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="171" y="353" width="47" height="115" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-59" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="239" y="353" width="36" height="157" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-60" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="301" y="353" width="36" height="157" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-61" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="357" y="353" width="47" height="115" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-62" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="418" y="353" width="47" height="115" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-63" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="553" y="353" width="40" height="125" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-65" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="604" y="353" width="40" height="125" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-66" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="655" y="353" width="40" height="125" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-67" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="706" y="353" width="40" height="125" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-68" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="763" y="353" width="40" height="125" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-69" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="827" y="353" width="40" height="125" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-70" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВЛ 110 кВ №1 ВЛ 110 кВ №2 ВЛ 110 кВ №3&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="571" y="507" width="180" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-71" value="&amp;lt;font style=&amp;quot;font-size: 8px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;ШСВ 110 кВ&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="747" y="507" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-72" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;1 сек. 10 кВ&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="251.5" y="80" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-73" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;2 сек. 10 кВ&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="414.5" y="80" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-74" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;3 сек. 10 кВ&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="568.5" y="80" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-75" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;4 сек. 10 кВ&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="728.5" y="80" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-76" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="266" y="101" width="31" height="9" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-77" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="429" y="101" width="31" height="9" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-78" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="584" y="101" width="31" height="9" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-79" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;кВ&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="743" y="101" width="31" height="9" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-80" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;СВ 10 кВ 1-3&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="234.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-81" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;АТ-1&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="300.5" y="205" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-82" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;КЛ 10 кВ №1&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="325.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-83" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;СВ 10 кВ 1-2&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="381.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-84" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;АТ-2&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="453.5" y="205" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-85" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;КЛ 10 кВ №2&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="484.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-86" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;СВ 10 кВ 2-3&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="538.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-87" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;АТ-3&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="611.5" y="205" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-88" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;КЛ 10 кВ №3&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="643.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-89" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;СВ 10 кВ 3-4&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="697.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-90" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;АТ-4&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="761.5" y="205" width="40" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-91" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: 8px;&amp;quot;&amp;gt;КЛ 10 кВ №4&amp;lt;/span&amp;gt;&amp;lt;/font&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="794.5" y="205" width="70" height="30" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-92" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.2&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.4&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="29" y="71" width="31" height="39" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-93" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.2&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.4&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="81" y="226" width="31" height="39" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-94" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.2&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.4&amp;lt;/font&amp;gt; &amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="155" y="226" width="31" height="39" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-96" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="305" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-97" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="255" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-98" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="345" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-99" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="405" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-100" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="461" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-101" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="564" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-102" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="504" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-103" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="615" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-104" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="715" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-105" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105);&amp;quot;&amp;gt;11.3&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;МВАр&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="775" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-107" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="664" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-108" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#00f269&amp;quot;&amp;gt;5.3&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot; color=&amp;quot;#ffd608&amp;quot;&amp;gt;А&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;10.2&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;МВт&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="825" y="225" width="31" height="29" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-109" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="255" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-110" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="305" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-111" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="346" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-112" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="389" y="122" width="53" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-113" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="455" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-116" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="499" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-117" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="544" y="122" width="55" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-118" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="618" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-119" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="660" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-120" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="700" y="122" width="57" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-121" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="777" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-122" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="822" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-123" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="861" y="122" width="25" height="93" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-124" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-1&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;125&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;5 РПН&amp;lt;br&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="120.5" y="276" width="23" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-125" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-2&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;125&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;5 РПН&amp;lt;br&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="89" y="294.5" width="23" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-126" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-1&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;125&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;5 РПН&amp;lt;br&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="563" y="276" width="23" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-127" value="&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;АТ-1&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;125&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;5 РПН&amp;lt;br&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;strokeColor=none;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="743" y="278" width="23" height="22" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-134" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;S &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;= &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВА&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;P&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;Вт&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;Q&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;вар&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;U&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;В&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;I&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;А&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;cos&amp;lt;/font&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;φ =&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="611" y="285" width="39" height="42" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-135" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;S &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;= &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВА&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;P&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;Вт&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;Q&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;вар&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;U&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;В&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;I&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;А&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;cos&amp;lt;/font&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;φ =&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="804" y="301" width="39" height="42" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-136" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;S &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;= &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВА&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;P&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;Вт&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;Q&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;вар&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;U&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;В&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;I&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;А&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;cos&amp;lt;/font&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;φ =&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="167" y="285" width="39" height="42" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;        &lt;mxCell id="lwR-MpSRMCXbGds93GLE-137" value="&amp;lt;font style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;S &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;= &amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot; style=&amp;quot;font-size: 5px;&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;ВА&amp;lt;/font&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;P&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;Вт&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;Q&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;вар&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;U&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;=&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;В&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;I&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8);&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt;&amp;amp;nbsp;&amp;lt;font color=&amp;quot;#00f269&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/font&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(255, 214, 8); background-color: initial;&amp;quot;&amp;gt;А&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;cos&amp;lt;/font&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;#ffd608&amp;quot;&amp;gt;φ =&amp;lt;/font&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 242, 105); background-color: initial;&amp;quot;&amp;gt;0&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;background-color: initial;&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=5;align=left;" parent="1" vertex="1"&gt;&#10;          &lt;mxGeometry x="24" y="255" width="39" height="42" as="geometry" /&gt;&#10;        &lt;/mxCell&gt;&#10;      &lt;/root&gt;&#10;    &lt;/mxGraphModel&gt;&#10;  &lt;/diagram&gt;&#10;&lt;/mxfile&gt;&#10;'
+  >
+    <defs />
+    <g>
       <g>
-        <g>
-          <rect
-            x="727"
-            y="48"
-            width="140"
-            height="6"
-            fill="#7601ad"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="570"
-            y="48"
-            width="136"
-            height="6"
-            fill="#7601ad"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="414"
-            y="48"
-            width="136"
-            height="6"
-            fill="#7601ad"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="244"
-            y="48"
-            width="149"
-            height="6"
-            fill="#7601ad"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="538"
-            y="279"
-            width="314"
-            height="6"
-            fill="#00a5ce"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 64 208 L 64 52"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <rect
-            x="25"
-            y="70"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#ff0000"
-            pointer-events="all"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="0"
-            y="48"
-            width="212"
-            height="6"
-            fill="#ff0d00"
-            stroke="#ff0800"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="64"
-            cy="51"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="0"
-            y="141"
-            width="212"
-            height="6"
-            fill="#ff0d00"
-            stroke="#ff0800"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 9 93.5 L 9 9.24"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 12.5 15.12 L 9 8.12 L 5.5 15.12"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 32 70 L 32 53"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 32 93 L 9 93"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 170 94.5 L 170 9.24"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 173.5 15.12 L 170 8.12 L 166.5 15.12"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 193 94 L 170 94"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 138 208 L 138 113"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 119 142 L 119 113"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 138.5 113 L 118.5 113"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="32"
-            cy="51"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="193"
-            cy="51"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="32"
-            cy="144"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="119"
-            cy="144"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="193"
-            cy="144"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 63.9 207.5 L 73 225"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 137.9 207.5 L 147 225"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <rect
-            x="13"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="60"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="123"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="241"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="303"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="366"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="429"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="25"
-            y="102"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#ff0000"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="186"
-            y="70"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#ff0000"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="186"
-            y="102"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#ff0000"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 436 401 L 436 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 166 396 L 166 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 1 381 L 1 231"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <rect
-            x="5"
-            y="401"
-            width="452"
-            height="6"
-            fill="#e0e027"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="20"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="67"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="130"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="248"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="311"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="374"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="436"
-            cy="404"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="5"
-            y="314"
-            width="452"
-            height="6"
-            fill="#e0e027"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 354 380.5 L 354 199"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 417 380 L 417 207"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="20"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="67"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="130"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="166"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="248"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="311"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="374"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="436"
-            cy="317"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 232 381 L 232 438.26"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 228.5 432.38 L 232 439.38 L 235.5 432.38"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 295 381 L 295 438.26"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 291.5 432.38 L 295 439.38 L 298.5 432.38"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 0.5 231 L 52 231"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 0.5 381 L 20 381"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 110.5 381 L 130 381"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 231.5 381 L 248 381"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 294.5 381 L 310 381"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 354.5 380 L 373 380"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 416.5 380 L 436 380"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 385 341 L 385 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 448 341 L 448 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 373 305 L 373 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 436 305 L 436 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 311 305 L 311 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 248 305 L 248 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 177 305 L 177 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 130 305 L 130 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 67 305 L 67 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 20 305 L 20 284"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 322 341 L 322 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 260 341 L 260 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 142 341 L 142 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 79 341 L 79 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 32 341 L 32 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 165.5 396 L 193.5 396"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 111 381 L 111 273"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 19.5 305 L 32.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 66.5 305 L 79.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 129.5 305 L 142.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 176.5 305 L 193.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 247.5 305 L 260.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 310.5 305 L 322.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 372.5 305 L 385.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 435.5 305 L 448.5 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 19.5 341 L 32.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 66.5 341 L 79.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 129.5 341 L 142.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 247.5 341 L 260.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 309.5 341 L 322.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 372.5 341 L 385.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 435.5 341 L 448.5 341"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <rect
-            x="5"
-            y="279"
-            width="454"
-            height="6"
-            fill="#e0e027"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="130"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="177"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="67"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="20"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="248"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="311"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="373"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="436"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 111 265 L 111 230.5"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 111 273.5 L 115 269"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 111 265 L 115 269.5"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 111 231 L 128 231"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="63"
-            cy="247"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 60 244 L 66 247 L 60 250 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            transform="rotate(270,63,247)"
-            pointer-events="all"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="138"
-            cy="247"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 135 244 L 141 247 L 135 250 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            transform="rotate(270,138,247)"
-            pointer-events="all"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="139"
-            cy="231"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 148.04 219.99 L 123 251.5"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 151.3 215.88 L 148.78 222.81 L 148.04 219.99 L 145.12 219.9 Z"
-            fill="#e0e027"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 139 232 L 135 228"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 138 232 L 143 232"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 139 236 L 139 232"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <path
-            d="M 72.04 219.99 L 47 251.5"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 75.3 215.88 L 72.78 222.81 L 72.04 219.99 L 69.12 219.9 Z"
-            fill="#e0e027"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 63 232 L 59 228"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 62 232 L 67 232"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 63 236 L 63 232"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="63"
-            cy="231"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 353.5 199 L 778 199"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 416.5 207 L 585 207"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="585"
-            cy="247"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 582 244 L 588 247 L 582 250 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            transform="rotate(270,585,247)"
-            pointer-events="all"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="778"
-            cy="247"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 775 244 L 781 247 L 775 250 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            transform="rotate(270,778,247)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="558"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="609"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="660"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="711"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="825"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <rect
-            x="774"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 534 408 L 534 231"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 565 408 L 565 363"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 781 408 L 781 363"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 832 408 L 832 363"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 408 L 754 321"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 616 405.76 L 616 363"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 612.5 399.88 L 616 406.88 L 619.5 399.88"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 667 405.76 L 667 363"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 663.5 399.88 L 667 406.88 L 670.5 399.88"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 718 405.76 L 718 363"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 714.5 399.88 L 718 406.88 L 721.5 399.88"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 565 349 L 565 320"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 616 349 L 616 320"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 667 349 L 667 320"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 718 349 L 718 320"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 781 349 L 781 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 832 349 L 832 320"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 436 349 L 436 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 373 401 L 373 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 310 401 L 310 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 248 401 L 248 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 130 401 L 130 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 67 401 L 67 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 20 401 L 20 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 373 349 L 373 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 310 349 L 310 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 248 349 L 248 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 193 349 L 193 305"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <rect
-            x="186"
-            y="349"
-            width="14"
-            height="14"
-            fill="none"
-            stroke="#e0e027"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 193 396 L 193 363"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 130 349 L 130 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 67 349 L 67 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 20 349 L 20 320"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 859 408 L 859 231"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 577 341 L 577 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 628 341 L 628 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 679 341 L 679 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 730 341 L 730 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 844 341 L 844 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 533.5 408 L 565.5 408"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 565 341 L 577.5 341"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 616 341 L 628.5 341"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 667 341 L 679.5 341"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 718 341 L 730.5 341"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 832 341 L 844.5 341"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 753.5 408 L 781.5 408"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 831.5 408 L 859.5 408"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 565 305 L 565 285"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 564.5 305 L 577.5 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 616 305 L 616 285"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 615.5 305 L 628.5 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 667 305 L 667 285"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 718 305 L 718 285"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 769 305 L 769 285"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 832 305 L 832 285"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 666.5 305 L 679.5 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 717.5 305 L 730.5 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 768.5 305 L 781.5 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 831.5 305 L 844.5 305"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 533.5 231 L 574 231"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 789 231 L 859.5 231"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <rect
-            x="538"
-            y="315"
-            width="314"
-            height="6"
-            fill="#00a5ce"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="565"
-            cy="318"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="616"
-            cy="318"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="667"
-            cy="318"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="667"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="616"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="565"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="718"
-            cy="318"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="718"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="754"
-            cy="318"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="832"
-            cy="318"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="832"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="769"
-            cy="282"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 32 102 L 32 84"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 32 141 L 32 116"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 193 141 L 193 116"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 193 102 L 193 84"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 193 70 L 193 53"
-            fill="none"
-            stroke="#ff0000"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 584.9 206.5 L 594 224"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="585"
-            cy="231"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 594.04 219.99 L 569 251.5"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 597.3 215.88 L 594.78 222.81 L 594.04 219.99 L 591.12 219.9 Z"
-            fill="#00a5ce"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 585 232 L 581 228"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 584 232 L 589 232"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 585 236 L 585 232"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 777.9 206.5 L 787 224"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <ellipse
-            cx="778"
-            cy="231"
-            rx="11"
-            ry="11"
-            fill="none"
-            stroke="#00a5ce"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 787.04 219.99 L 762 251.5"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 790.3 215.88 L 787.78 222.81 L 787.04 219.99 L 784.12 219.9 Z"
-            fill="#00a5ce"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 778 232 L 774 228"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 777 232 L 782 232"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 778 236 L 778 232"
-            fill="none"
-            stroke="#00a5ce"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 778 207 L 778 199.5"
-            fill="none"
-            stroke="#e0e027"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="247"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 252 89 L 252 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 251.8 83 L 257 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 247 87 L 252.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 251.8 80 L 257 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 247 84 L 252.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 252 99 L 252 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 251.8 105 L 257 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 247 101 L 252.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 251.8 108 L 257 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 247 104 L 252.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="294"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 299 89 L 299 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 298.8 83 L 304 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 294 87 L 299.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 298.8 80 L 304 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 294 84 L 299.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 299 99 L 299 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 298.8 105 L 304 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 294 101 L 299.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 298.8 108 L 304 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 294 104 L 299.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="341"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 346 89 L 346 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 345.8 83 L 351 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 341 87 L 346.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 345.8 80 L 351 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 341 84 L 346.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 346 99 L 346 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 345.8 105 L 351 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 341 101 L 346.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 345.8 108 L 351 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 341 104 L 346.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="380"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 385 89 L 385 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 384.8 83 L 390 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 380 87 L 385.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 384.8 80 L 390 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 380 84 L 385.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 385 99 L 385 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 384.8 105 L 390 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 380 101 L 385.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 384.8 108 L 390 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 380 104 L 385.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="416"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 421 89 L 421 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 420.8 83 L 426 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 416 87 L 421.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 420.8 80 L 426 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 416 84 L 421.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 421 99 L 421 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 420.8 105 L 426 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 416 101 L 421.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 420.8 108 L 426 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 416 104 L 421.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="447"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 452 89 L 452 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 451.8 83 L 457 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 447 87 L 452.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 451.8 80 L 457 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 447 84 L 452.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 452 99 L 452 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 451.8 105 L 457 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 447 101 L 452.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 451.8 108 L 457 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 447 104 L 452.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="494"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 499 89 L 499 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 498.8 83 L 504 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 494 87 L 499.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 498.8 80 L 504 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 494 84 L 499.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 499 99 L 499 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 498.8 105 L 504 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 494 101 L 499.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 498.8 108 L 504 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 494 104 L 499.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="537"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 542 89 L 542 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 541.8 83 L 547 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 537 87 L 542.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 541.8 80 L 547 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 537 84 L 542.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 542 99 L 542 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 541.8 105 L 547 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 537 101 L 542.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 541.8 108 L 547 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 537 104 L 542.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="572"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 577 89 L 577 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 576.8 83 L 582 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 572 87 L 577.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 576.8 80 L 582 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 572 84 L 577.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 577 99 L 577 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 576.8 105 L 582 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 572 101 L 577.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 576.8 108 L 582 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 572 104 L 577.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="608"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 613 89 L 613 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 612.8 83 L 618 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 608 87 L 613.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 612.8 80 L 618 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 608 84 L 613.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 613 99 L 613 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 612.8 105 L 618 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 608 101 L 613.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 612.8 108 L 618 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 608 104 L 613.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="651"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 656 89 L 656 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 655.8 83 L 661 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 651 87 L 656.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 655.8 80 L 661 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 651 84 L 656.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 656 99 L 656 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 655.8 105 L 661 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 651 101 L 656.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 655.8 108 L 661 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 651 104 L 656.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="694"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 699 89 L 699 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 698.8 83 L 704 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 694 87 L 699.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 698.8 80 L 704 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 694 84 L 699.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 699 99 L 699 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 698.8 105 L 704 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 694 101 L 699.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 698.8 108 L 704 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 694 104 L 699.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="729"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 734 89 L 734 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 733.8 83 L 739 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 729 87 L 734.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 733.8 80 L 739 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 729 84 L 734.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 734 99 L 734 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 733.8 105 L 739 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 729 101 L 734.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 733.8 108 L 739 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 729 104 L 734.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="769"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 774 89 L 774 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 773.8 83 L 779 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 769 87 L 774.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 773.8 80 L 779 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 769 84 L 774.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 774 99 L 774 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 773.8 105 L 779 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 769 101 L 774.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 773.8 108 L 779 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 769 104 L 774.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="812"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 817 89 L 817 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 816.8 83 L 822 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 812 87 L 817.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 816.8 80 L 822 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 812 84 L 817.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 817 99 L 817 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 816.8 105 L 822 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 812 101 L 817.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 816.8 108 L 822 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 812 104 L 817.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g />
-        <g>
-          <rect
-            x="851"
-            y="89"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="#7601ad"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 856 89 L 856 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 855.8 83 L 861 87"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 851 87 L 856.2 83"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 855.8 80 L 861 84"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 851 84 L 856.2 80"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 856 99 L 856 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 855.8 105 L 861 101"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 851 101 L 856.2 105"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 855.8 108 L 861 104"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 851 104 L 856.2 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 252 144 L 252 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 299 144 L 299 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 385 144 L 385 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 421 144 L 421 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 452 144 L 452 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 542 144 L 542 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 577 144 L 577 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 613 144 L 613 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 699 144 L 699 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 734 144 L 734 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 774 144 L 774 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 346 135.88 L 346 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 346 142.88 L 343.67 135.88 L 348.33 135.88 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 499 135.88 L 499 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 499 142.88 L 496.67 135.88 L 501.33 135.88 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 656 135.88 L 656 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 656 142.88 L 653.67 135.88 L 658.33 135.88 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 817 135.88 L 817 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-          <path
-            d="M 817 142.88 L 814.67 135.88 L 819.33 135.88 Z"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <path
-            d="M 252 80 L 252 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 299 80 L 299 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 346 80 L 346 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 385 80 L 385 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 421 80 L 421 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 452 80 L 452 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 499 80 L 499 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 542 80 L 542 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 577 80 L 577 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 613 80 L 613 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 656 80 L 656 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 699 80 L 699 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 734 80 L 734 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 774 80 L 774 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 817 80 L 817 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 856 80 L 856 53"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 283.5 144 L 251.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 283 188 L 283 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 326 144 L 326 11"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 421.5 144 L 384.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 326.5 144 L 298.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 479.5 144 L 451.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 479 144 L 479 3"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 577.5 144 L 541.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 183 L 640 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 184 L 754 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 856 187 L 856 108"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 856.5 188 L 282.5 188"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 734.5 144 L 698.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640.5 144 L 612.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 774.5 144 L 753.5 144"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640.5 262 L 584.5 262"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 778.5 262 L 753.5 262"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 262 L 754 203"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 262 L 640 203"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 585 262 L 585 258"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 778 262 L 778 258"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 204 L 644 199"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 191 L 644 186"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 195 L 644 200"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 182 L 644 187"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 640 195.5 L 640 190"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 182 L 758 187"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 191 L 758 186"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 195 L 758 200"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 204 L 758 199"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 754 195.5 L 754 190"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 224 262 L 224 11"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 232 270 L 232 14.5"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 326.5 11 L 223.5 11"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 479.5 3 L 231.5 3"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 232 6.5 L 232 3"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 232 6 L 236 11"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 232 15 L 236 10"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 138 262 L 138 258"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 63 270 L 63 258"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 224.5 262 L 137.5 262"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <path
-            d="M 232.5 270 L 62.5 270"
-            fill="none"
-            stroke="#7601ad"
-            stroke-miterlimit="10"
-            pointer-events="stroke"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="252"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="299"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="346"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="385"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="421"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="452"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="499"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="542"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="577"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="613"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="656"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="699"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="734"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="774"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="817"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
-        </g>
-        <g>
-          <ellipse
-            cx="856"
-            cy="51.16"
-            rx="1"
-            ry="1"
-            fill="rgb(255, 255, 255)"
-            stroke="rgb(0, 0, 0)"
-            pointer-events="all"
-          />
+        <rect
+          x="798"
+          y="66"
+          width="140"
+          height="6"
+          fill="#7601ad"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="641"
+          y="66"
+          width="136"
+          height="6"
+          fill="#7601ad"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="485"
+          y="66"
+          width="136"
+          height="6"
+          fill="#7601ad"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="315"
+          y="66"
+          width="149"
+          height="6"
+          fill="#7601ad"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="609"
+          y="297"
+          width="314"
+          height="6"
+          fill="#00a5ce"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 135 226 L 135 70"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <rect
+          x="96"
+          y="88"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#ff0000"
+          pointer-events="all"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="71"
+          y="66"
+          width="212"
+          height="6"
+          fill="#ff0d00"
+          stroke="#ff0800"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="135"
+          cy="69"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="71"
+          y="159"
+          width="212"
+          height="6"
+          fill="#ff0d00"
+          stroke="#ff0800"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 80 111.5 L 80 27.24"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 83.5 33.12 L 80 26.12 L 76.5 33.12"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 103 88 L 103 71"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 103 111 L 80 111"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 241 112.5 L 241 27.24"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 244.5 33.12 L 241 26.12 L 237.5 33.12"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 264 112 L 241 112"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 209 226 L 209 131"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 190 160 L 190 131"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 209.5 131 L 189.5 131"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="103"
+          cy="69"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="264"
+          cy="69"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="103"
+          cy="162"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="190"
+          cy="162"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="264"
+          cy="162"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 134.9 225.5 L 144 243"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 208.9 225.5 L 218 243"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <rect
+          x="84"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="131"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="194"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="312"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="374"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="437"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="500"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="96"
+          y="120"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#ff0000"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="257"
+          y="88"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#ff0000"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="257"
+          y="120"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#ff0000"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 507 419 L 507 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 237 414 L 237 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 72 399 L 72 249"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <rect
+          x="76"
+          y="419"
+          width="452"
+          height="6"
+          fill="#e0e027"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="91"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="138"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="201"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="319"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="382"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="445"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="507"
+          cy="422"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="76"
+          y="332"
+          width="452"
+          height="6"
+          fill="#e0e027"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 425 398.5 L 425 217"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 488 398 L 488 225"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="91"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="138"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="201"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="237"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="319"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="382"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="445"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="507"
+          cy="335"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 303 399 L 303 456.26"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 299.5 450.38 L 303 457.38 L 306.5 450.38"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 366 399 L 366 456.26"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 362.5 450.38 L 366 457.38 L 369.5 450.38"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 71.5 249 L 123 249"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 71.5 399 L 91 399"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 181.5 399 L 201 399"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 302.5 399 L 319 399"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 365.5 399 L 381 399"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 425.5 398 L 444 398"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 487.5 398 L 507 398"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 456 359 L 456 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 519 359 L 519 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 444 323 L 444 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 507 323 L 507 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 382 323 L 382 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 319 323 L 319 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 248 323 L 248 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 201 323 L 201 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 138 323 L 138 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 91 323 L 91 302"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 393 359 L 393 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 331 359 L 331 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 213 359 L 213 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 150 359 L 150 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 103 359 L 103 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 236.5 414 L 264.5 414"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 182 399 L 182 291"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 90.5 323 L 103.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 137.5 323 L 150.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 200.5 323 L 213.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 247.5 323 L 264.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 318.5 323 L 331.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 381.5 323 L 393.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 443.5 323 L 456.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 506.5 323 L 519.5 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 90.5 359 L 103.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 137.5 359 L 150.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 200.5 359 L 213.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 318.5 359 L 331.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 380.5 359 L 393.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 443.5 359 L 456.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 506.5 359 L 519.5 359"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <rect
+          x="76"
+          y="297"
+          width="454"
+          height="6"
+          fill="#e0e027"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="201"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="248"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="138"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="91"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="319"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="382"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="444"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="507"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 182 283 L 182 248.5"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 182 291.5 L 186 287"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 182 283 L 186 287.5"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 182 249 L 199 249"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="134"
+          cy="265"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 131 262 L 137 265 L 131 268 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          transform="rotate(270,134,265)"
+          pointer-events="all"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="209"
+          cy="265"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 206 262 L 212 265 L 206 268 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          transform="rotate(270,209,265)"
+          pointer-events="all"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="210"
+          cy="249"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 219.04 237.99 L 194 269.5"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 222.3 233.88 L 219.78 240.81 L 219.04 237.99 L 216.12 237.9 Z"
+          fill="#e0e027"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 210 250 L 206 246"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 209 250 L 214 250"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 210 254 L 210 250"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <path
+          d="M 143.04 237.99 L 118 269.5"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 146.3 233.88 L 143.78 240.81 L 143.04 237.99 L 140.12 237.9 Z"
+          fill="#e0e027"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 134 250 L 130 246"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 133 250 L 138 250"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 134 254 L 134 250"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="134"
+          cy="249"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 424.5 217 L 849 217"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 487.5 225 L 656 225"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="656"
+          cy="265"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 653 262 L 659 265 L 653 268 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          transform="rotate(270,656,265)"
+          pointer-events="all"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="849"
+          cy="265"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 846 262 L 852 265 L 846 268 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          transform="rotate(270,849,265)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="629"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="680"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="731"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="782"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="896"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="845"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 605 426 L 605 249"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 636 426 L 636 381"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 852 426 L 852 381"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 903 426 L 903 381"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 426 L 825 339"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 687 423.76 L 687 381"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 683.5 417.88 L 687 424.88 L 690.5 417.88"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 738 423.76 L 738 381"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 734.5 417.88 L 738 424.88 L 741.5 417.88"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 789 423.76 L 789 381"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 785.5 417.88 L 789 424.88 L 792.5 417.88"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 636 367 L 636 338"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 687 367 L 687 338"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 738 367 L 738 338"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 789 367 L 789 338"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 852 367 L 852 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 903 367 L 903 338"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 507 367 L 507 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 444 419 L 444 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 381 419 L 381 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 319 419 L 319 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 201 419 L 201 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 138 419 L 138 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 91 419 L 91 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 444 367 L 444 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 381 367 L 381 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 319 367 L 319 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 264 367 L 264 323"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <rect
+          x="257"
+          y="367"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="#e0e027"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 264 414 L 264 381"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 201 367 L 201 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 138 367 L 138 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 91 367 L 91 338"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 930 426 L 930 249"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 648 359 L 648 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 699 359 L 699 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 750 359 L 750 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 801 359 L 801 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 915 359 L 915 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 604.5 426 L 636.5 426"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 636 359 L 648.5 359"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 687 359 L 699.5 359"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 738 359 L 750.5 359"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 789 359 L 801.5 359"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 903 359 L 915.5 359"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 824.5 426 L 852.5 426"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 902.5 426 L 930.5 426"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 636 323 L 636 303"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 635.5 323 L 648.5 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 687 323 L 687 303"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 686.5 323 L 699.5 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 738 323 L 738 303"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 789 323 L 789 303"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 840 323 L 840 303"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 903 323 L 903 303"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 737.5 323 L 750.5 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 788.5 323 L 801.5 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 839.5 323 L 852.5 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 902.5 323 L 915.5 323"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 604.5 249 L 645 249"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 860 249 L 930.5 249"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <rect
+          x="609"
+          y="333"
+          width="314"
+          height="6"
+          fill="#00a5ce"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="636"
+          cy="336"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="687"
+          cy="336"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="738"
+          cy="336"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="738"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="687"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="636"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="789"
+          cy="336"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="789"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="825"
+          cy="336"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="903"
+          cy="336"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="903"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="840"
+          cy="300"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 103 120 L 103 102"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 103 159 L 103 134"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 264 159 L 264 134"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 264 120 L 264 102"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 264 88 L 264 71"
+          fill="none"
+          stroke="#ff0000"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 655.9 224.5 L 665 242"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="656"
+          cy="249"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 665.04 237.99 L 640 269.5"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 668.3 233.88 L 665.78 240.81 L 665.04 237.99 L 662.12 237.9 Z"
+          fill="#00a5ce"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 656 250 L 652 246"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 655 250 L 660 250"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 656 254 L 656 250"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 848.9 224.5 L 858 242"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <ellipse
+          cx="849"
+          cy="249"
+          rx="11"
+          ry="11"
+          fill="none"
+          stroke="#00a5ce"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 858.04 237.99 L 833 269.5"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 861.3 233.88 L 858.78 240.81 L 858.04 237.99 L 855.12 237.9 Z"
+          fill="#00a5ce"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 849 250 L 845 246"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 848 250 L 853 250"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 849 254 L 849 250"
+          fill="none"
+          stroke="#00a5ce"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 849 225 L 849 217.5"
+          fill="none"
+          stroke="#e0e027"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="318"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 323 107 L 323 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 322.8 101 L 328 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 318 105 L 323.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 322.8 98 L 328 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 318 102 L 323.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 323 117 L 323 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 322.8 123 L 328 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 318 119 L 323.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 322.8 126 L 328 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 318 122 L 323.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="365"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 370 107 L 370 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 369.8 101 L 375 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 365 105 L 370.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 369.8 98 L 375 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 365 102 L 370.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 370 117 L 370 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 369.8 123 L 375 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 365 119 L 370.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 369.8 126 L 375 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 365 122 L 370.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="412"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 417 107 L 417 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 416.8 101 L 422 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 412 105 L 417.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 416.8 98 L 422 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 412 102 L 417.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 417 117 L 417 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 416.8 123 L 422 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 412 119 L 417.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 416.8 126 L 422 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 412 122 L 417.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="451"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 456 107 L 456 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 455.8 101 L 461 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 451 105 L 456.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 455.8 98 L 461 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 451 102 L 456.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 456 117 L 456 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 455.8 123 L 461 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 451 119 L 456.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 455.8 126 L 461 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 451 122 L 456.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="487"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 492 107 L 492 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 491.8 101 L 497 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 487 105 L 492.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 491.8 98 L 497 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 487 102 L 492.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 492 117 L 492 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 491.8 123 L 497 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 487 119 L 492.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 491.8 126 L 497 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 487 122 L 492.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="518"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 523 107 L 523 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 522.8 101 L 528 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 518 105 L 523.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 522.8 98 L 528 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 518 102 L 523.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 523 117 L 523 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 522.8 123 L 528 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 518 119 L 523.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 522.8 126 L 528 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 518 122 L 523.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="565"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 570 107 L 570 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 569.8 101 L 575 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 565 105 L 570.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 569.8 98 L 575 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 565 102 L 570.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 570 117 L 570 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 569.8 123 L 575 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 565 119 L 570.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 569.8 126 L 575 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 565 122 L 570.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="608"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 613 107 L 613 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 612.8 101 L 618 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 608 105 L 613.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 612.8 98 L 618 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 608 102 L 613.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 613 117 L 613 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 612.8 123 L 618 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 608 119 L 613.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 612.8 126 L 618 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 608 122 L 613.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="643"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 648 107 L 648 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 647.8 101 L 653 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 643 105 L 648.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 647.8 98 L 653 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 643 102 L 648.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 648 117 L 648 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 647.8 123 L 653 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 643 119 L 648.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 647.8 126 L 653 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 643 122 L 648.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="679"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 684 107 L 684 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 683.8 101 L 689 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 679 105 L 684.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 683.8 98 L 689 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 679 102 L 684.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 684 117 L 684 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 683.8 123 L 689 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 679 119 L 684.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 683.8 126 L 689 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 679 122 L 684.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="722"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 727 107 L 727 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 726.8 101 L 732 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 722 105 L 727.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 726.8 98 L 732 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 722 102 L 727.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 727 117 L 727 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 726.8 123 L 732 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 722 119 L 727.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 726.8 126 L 732 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 722 122 L 727.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="765"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 770 107 L 770 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 769.8 101 L 775 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 765 105 L 770.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 769.8 98 L 775 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 765 102 L 770.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 770 117 L 770 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 769.8 123 L 775 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 765 119 L 770.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 769.8 126 L 775 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 765 122 L 770.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="800"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 805 107 L 805 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 804.8 101 L 810 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 800 105 L 805.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 804.8 98 L 810 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 800 102 L 805.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 805 117 L 805 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 804.8 123 L 810 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 800 119 L 805.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 804.8 126 L 810 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 800 122 L 805.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="840"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 845 107 L 845 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 844.8 101 L 850 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 840 105 L 845.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 844.8 98 L 850 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 840 102 L 845.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 845 117 L 845 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 844.8 123 L 850 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 840 119 L 845.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 844.8 126 L 850 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 840 122 L 845.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="883"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 888 107 L 888 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 887.8 101 L 893 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 883 105 L 888.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 887.8 98 L 893 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 883 102 L 888.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 888 117 L 888 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 887.8 123 L 893 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 883 119 L 888.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 887.8 126 L 893 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 883 122 L 888.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g />
+      <g>
+        <rect
+          x="922"
+          y="107"
+          width="10"
+          height="10"
+          fill="none"
+          stroke="#7601ad"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 927 107 L 927 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 926.8 101 L 932 105"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 922 105 L 927.2 101"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 926.8 98 L 932 102"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 922 102 L 927.2 98"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 927 117 L 927 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 926.8 123 L 932 119"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 922 119 L 927.2 123"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 926.8 126 L 932 122"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 922 122 L 927.2 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 323 162 L 323 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 370 162 L 370 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 456 162 L 456 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 492 162 L 492 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 523 162 L 523 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 613 162 L 613 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 648 162 L 648 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 684 162 L 684 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 770 162 L 770 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 805 162 L 805 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 845 162 L 845 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 417 153.88 L 417 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 417 160.88 L 414.67 153.88 L 419.33 153.88 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 570 153.88 L 570 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 570 160.88 L 567.67 153.88 L 572.33 153.88 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 727 153.88 L 727 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 727 160.88 L 724.67 153.88 L 729.33 153.88 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 888 153.88 L 888 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+        <path
+          d="M 888 160.88 L 885.67 153.88 L 890.33 153.88 Z"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <path
+          d="M 323 98 L 323 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 370 98 L 370 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 417 98 L 417 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 456 98 L 456 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 492 98 L 492 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 523 98 L 523 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 570 98 L 570 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 613 98 L 613 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 648 98 L 648 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 684 98 L 684 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 727 98 L 727 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 770 98 L 770 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 805 98 L 805 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 845 98 L 845 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 888 98 L 888 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 927 98 L 927 71"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 354.5 162 L 322.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 354 206 L 354 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 397 162 L 397 29"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 492.5 162 L 455.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 397.5 162 L 369.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 550.5 162 L 522.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 550 162 L 550 21"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 648.5 162 L 612.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 201 L 711 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 202 L 825 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 927 205 L 927 126"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 927.5 206 L 353.5 206"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 805.5 162 L 769.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711.5 162 L 683.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 845.5 162 L 824.5 162"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711.5 280 L 655.5 280"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 849.5 280 L 824.5 280"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 280 L 825 221"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 280 L 711 221"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 656 280 L 656 276"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 849 280 L 849 276"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 222 L 715 217"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 209 L 715 204"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 213 L 715 218"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 200 L 715 205"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 711 213.5 L 711 208"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 200 L 829 205"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 209 L 829 204"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 213 L 829 218"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 222 L 829 217"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 825 213.5 L 825 208"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 295 280 L 295 29"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 303 288 L 303 32.5"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 397.5 29 L 294.5 29"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 550.5 21 L 302.5 21"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 303 24.5 L 303 21"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 303 24 L 307 29"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 303 33 L 307 28"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 209 280 L 209 276"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 134 288 L 134 276"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 295.5 280 L 208.5 280"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <path
+          d="M 303.5 288 L 133.5 288"
+          fill="none"
+          stroke="#7601ad"
+          stroke-miterlimit="10"
+          pointer-events="stroke"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="323"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="370"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="417"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="456"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="492"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="523"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="570"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="613"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="648"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="684"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="727"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="770"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="805"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="845"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="888"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <ellipse
+          cx="927"
+          cy="69.16"
+          rx="1"
+          ry="1"
+          fill="rgb(255, 255, 255)"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="71"
+          y="73"
+          width="47"
+          height="85"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="231"
+          y="73"
+          width="47"
+          height="85"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="69"
+          y="303"
+          width="47"
+          height="115"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="214.5"
+          y="0"
+          width="80"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 15px;
+                  margin-left: 255px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ВЛ 500 кВ №2</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="255"
+              y="19"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ВЛ 500 кВ №2
+            </text>
+          </switch>
         </g>
       </g>
-    </svg>
-  </panZoom>
+      <g>
+        <rect
+          x="52.5"
+          y="0"
+          width="80"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 15px;
+                  margin-left: 93px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ВЛ 500 кВ №1</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="93"
+              y="19"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ВЛ 500 кВ №1
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="247"
+          y="21"
+          width="31"
+          height="39"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 40px;
+                  margin-left: 249px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.2</font>
+                      <font color="#ffd608" style="font-size: 5px">А</font></font
+                    >
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.3</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.4</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font><br />
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105); background-color: initial">11.3 </span
+                      ><span style="color: rgb(255, 214, 8)">МВАр</span><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="249" y="42" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.2 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="38" y="72" width="20" height="20" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 18px;
+                  height: 1px;
+                  padding-top: 82px;
+                  margin-left: 39px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font style="font-size: 5px" color="#00f269">10.0</font> <font
+                        color="#ffd608"
+                        >кВ</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font style="font-size: 5px" color="#00f269">10.0</font> <font
+                          color="#ffd608"
+                          >кВ</font
+                        ></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font style="font-size: 5px" color="#00f269">10.0</font> <font
+                          color="#ffd608"
+                          >кВ</font
+                        ></font
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="48"
+              y="84"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="5px"
+              text-anchor="middle"
+            >
+              10.0 кВ...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="0" y="50" width="70" height="30" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 65px;
+                  margin-left: 35px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">2 СШ 500 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="35"
+              y="69"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              2 СШ 500 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="0" y="140" width="70" height="30" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 155px;
+                  margin-left: 35px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">1 СШ 500 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="35"
+              y="159"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              1 СШ 500 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="38"
+          y="162"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 18px;
+                  height: 1px;
+                  padding-top: 172px;
+                  margin-left: 39px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font style="font-size: 5px" color="#00f269">10.0</font> <font
+                        color="#ffd608"
+                        >кВ</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font style="font-size: 5px" color="#00f269">10.0</font> <font
+                          color="#ffd608"
+                          >кВ</font
+                        ></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font style="font-size: 5px" color="#00f269">10.0</font> <font
+                          color="#ffd608"
+                          >кВ</font
+                        ></font
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="48"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="5px"
+              text-anchor="middle"
+            >
+              10.0 кВ...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="0" y="279" width="70" height="30" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 294px;
+                  margin-left: 35px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">1 СШ 220 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="35"
+              y="298"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              1 СШ 220 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="0" y="310" width="70" height="30" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 325px;
+                  margin-left: 35px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">2 СШ 220 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="35"
+              y="329"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              2 СШ 220 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="8" y="405" width="70" height="30" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 420px;
+                  margin-left: 43px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ОСШ 220 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="43"
+              y="424"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ОСШ 220 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="127"
+          y="155"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 147px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">АТ-2</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="147"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-2
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="200"
+          y="155"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 220px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">АТ-1</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="220"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-1
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="30"
+          y="300"
+          width="27"
+          height="12"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 25px;
+                  height: 1px;
+                  padding-top: 306px;
+                  margin-left: 32px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">220.0</font> <font
+                        color="#ffd608"
+                        >кВ</font
+                      ></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="32" y="308" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              220.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="30"
+          y="331"
+          width="27"
+          height="12"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 25px;
+                  height: 1px;
+                  padding-top: 337px;
+                  margin-left: 32px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">220.0</font> <font
+                        color="#ffd608"
+                        >кВ</font
+                      ></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="32" y="339" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              220.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="79"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 81px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="81" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="126"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 128px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="128" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="182"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 184px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="184" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="238"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 240px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="240" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="307"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 309px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="309" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="369"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 371px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="371" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="433"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 435px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="435" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="498"
+          y="426"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 441px;
+                  margin-left: 500px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="500" y="442" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="73"
+          y="447"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 462px;
+                  margin-left: 93px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">АТ-2</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="93"
+              y="466"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-2
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="109"
+          y="447"
+          width="60"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 462px;
+                  margin-left: 139px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ОВ 220 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="139"
+              y="466"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ОВ 220 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="176"
+          y="447"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 462px;
+                  margin-left: 196px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">АТ-1</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="196"
+              y="466"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-1
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="218"
+          y="447"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 462px;
+                  margin-left: 253px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ШСВ 220 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="253"
+              y="466"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ШСВ 220 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="268"
+          y="449"
+          width="80"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 464px;
+                  margin-left: 308px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ВЛ 220 кВ №1</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="308"
+              y="468"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ВЛ 220 кВ №1
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="336"
+          y="449"
+          width="80"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 464px;
+                  margin-left: 376px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ВЛ 220 кВ №2</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="376"
+              y="468"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ВЛ 220 кВ №2
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="428"
+          y="447"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 462px;
+                  margin-left: 448px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">АТ-4</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="448"
+              y="466"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-4
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="493"
+          y="447"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 462px;
+                  margin-left: 513px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">АТ-3</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="513"
+              y="466"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-3
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="541"
+          y="279"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 294px;
+                  margin-left: 576px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">1 СШ 110 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="576"
+              y="298"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              1 СШ 110 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="541"
+          y="317"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 332px;
+                  margin-left: 576px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">2 СШ 110 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="576"
+              y="336"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              2 СШ 110 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="572"
+          y="341"
+          width="27"
+          height="12"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 25px;
+                  height: 1px;
+                  padding-top: 347px;
+                  margin-left: 574px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">110.0</font> <font
+                        color="#ffd608"
+                        >кВ</font
+                      ></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="574" y="349" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              110.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="572"
+          y="301"
+          width="27"
+          height="12"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 25px;
+                  height: 1px;
+                  padding-top: 307px;
+                  margin-left: 574px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">110.0</font> <font
+                        color="#ffd608"
+                        >кВ</font
+                      ></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="574" y="309" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              110.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="606"
+          y="431"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 446px;
+                  margin-left: 608px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="608" y="447" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="671"
+          y="431"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 446px;
+                  margin-left: 673px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="673" y="447" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="722"
+          y="431"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 446px;
+                  margin-left: 724px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="724" y="447" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="774"
+          y="431"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 446px;
+                  margin-left: 776px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="776" y="447" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="824"
+          y="431"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 446px;
+                  margin-left: 826px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="826" y="447" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="899"
+          y="431"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 446px;
+                  margin-left: 901px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="901" y="447" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="122"
+          y="303"
+          width="36"
+          height="115"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="170"
+          y="303"
+          width="47"
+          height="115"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="229"
+          y="303"
+          width="47"
+          height="115"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="297"
+          y="303"
+          width="36"
+          height="157"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="359"
+          y="303"
+          width="36"
+          height="157"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="415"
+          y="303"
+          width="47"
+          height="115"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="476"
+          y="303"
+          width="47"
+          height="115"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="611"
+          y="303"
+          width="40"
+          height="125"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="662"
+          y="303"
+          width="40"
+          height="125"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="713"
+          y="303"
+          width="40"
+          height="125"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="764"
+          y="303"
+          width="40"
+          height="125"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="821"
+          y="303"
+          width="40"
+          height="125"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="885"
+          y="303"
+          width="40"
+          height="125"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="629"
+          y="457"
+          width="180"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 472px;
+                  margin-left: 719px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px"
+                      >ВЛ 110 кВ №1 ВЛ 110 кВ №2 ВЛ 110 кВ №3</font
+                    >
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="719"
+              y="476"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ВЛ 110 кВ №1 ВЛ 110 кВ №2 ВЛ 110 кВ №3
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="805"
+          y="457"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 472px;
+                  margin-left: 840px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608" style="font-size: 8px">ШСВ 110 кВ</font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="840"
+              y="476"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              ШСВ 110 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="309.5"
+          y="30"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 45px;
+                  margin-left: 345px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">1 сек. 10 кВ</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="345"
+              y="49"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              1 сек. 10 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="472.5"
+          y="30"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 45px;
+                  margin-left: 508px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">2 сек. 10 кВ</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="508"
+              y="49"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              2 сек. 10 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="626.5"
+          y="30"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 45px;
+                  margin-left: 662px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">3 сек. 10 кВ</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="662"
+              y="49"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              3 сек. 10 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="786.5"
+          y="30"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 45px;
+                  margin-left: 822px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">4 сек. 10 кВ</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="822"
+              y="49"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              4 сек. 10 кВ
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="324" y="51" width="31" height="9" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 55px;
+                  margin-left: 326px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269">10.0</font> <font color="#ffd608">кВ</font></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="326" y="57" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              10.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="487" y="51" width="31" height="9" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 55px;
+                  margin-left: 489px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269">10.0</font> <font color="#ffd608">кВ</font></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="489" y="57" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              10.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="642" y="51" width="31" height="9" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 55px;
+                  margin-left: 644px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269">10.0</font> <font color="#ffd608">кВ</font></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="644" y="57" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              10.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="801" y="51" width="31" height="9" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 55px;
+                  margin-left: 803px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269">10.0</font> <font color="#ffd608">кВ</font></font
+                    >
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="803" y="57" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              10.0 кВ&#xa;
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="292.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 328px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">СВ 10 кВ 1-3</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="328"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              СВ 10 кВ 1-3
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="358.5"
+          y="155"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 379px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">АТ-1</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="379"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-1
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="383.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 419px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">КЛ 10 кВ №1</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="419"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              КЛ 10 кВ №1
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="439.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 475px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">СВ 10 кВ 1-2</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="475"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              СВ 10 кВ 1-2
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="511.5"
+          y="155"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 532px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">АТ-2</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="532"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-2
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="542.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 578px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">КЛ 10 кВ №2</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="578"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              КЛ 10 кВ №2
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="596.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 632px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">СВ 10 кВ 2-3</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="632"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              СВ 10 кВ 2-3
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="669.5"
+          y="155"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 690px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">АТ-3</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="690"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-3
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="701.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 737px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">КЛ 10 кВ №3</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="737"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              КЛ 10 кВ №3
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="755.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 791px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">СВ 10 кВ 3-4</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="791"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              СВ 10 кВ 3-4
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="819.5"
+          y="155"
+          width="40"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 840px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">АТ-4</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="840"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              АТ-4
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="852.5"
+          y="155"
+          width="70"
+          height="30"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe center;
+                  width: 1px;
+                  height: 1px;
+                  padding-top: 170px;
+                  margin-left: 888px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: center"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 12px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: nowrap;
+                    "
+                  >
+                    <font color="#ffd608"><span style="font-size: 8px">КЛ 10 кВ №4</span></font>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text
+              x="888"
+              y="174"
+              fill="rgb(0, 0, 0)"
+              font-family="Helvetica"
+              font-size="12px"
+              text-anchor="middle"
+            >
+              КЛ 10 кВ №4
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect x="87" y="21" width="31" height="39" fill="none" stroke="none" pointer-events="all" />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 40px;
+                  margin-left: 89px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.2</font>
+                      <font color="#ffd608" style="font-size: 5px">А</font></font
+                    >
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.3</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.4</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font><br />
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105); background-color: initial">11.3 </span
+                      ><span style="color: rgb(255, 214, 8)">МВАр</span><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="89" y="42" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.2 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="139"
+          y="176"
+          width="31"
+          height="39"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 196px;
+                  margin-left: 141px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.2</font>
+                      <font color="#ffd608" style="font-size: 5px">А</font></font
+                    >
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.3</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.4</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font><br />
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105); background-color: initial">11.3 </span
+                      ><span style="color: rgb(255, 214, 8)">МВАр</span><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="141" y="197" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.2 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="213"
+          y="176"
+          width="31"
+          height="39"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 196px;
+                  margin-left: 215px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.2</font>
+                      <font color="#ffd608" style="font-size: 5px">А</font></font
+                    >
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.3</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font style="font-size: 5px"
+                        ><font color="#00f269" style="font-size: 5px">5.4</font>
+                        <font color="#ffd608" style="font-size: 5px">А</font></font
+                      >
+                    </div>
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font><br />
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105); background-color: initial">11.3 </span
+                      ><span style="color: rgb(255, 214, 8)">МВАр</span><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="215" y="197" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.2 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="363"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 365px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="365" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="313"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 315px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="315" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="403"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 405px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="405" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="463"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 465px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="465" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="519"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 521px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="521" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="622"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 624px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="624" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="562"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 564px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="564" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="673"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 675px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="675" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="773"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 775px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="775" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="833"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 835px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px">
+                      <span style="color: rgb(0, 242, 105)">11.3 </span
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">МВАр</span
+                      ><br />
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="835" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="722"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 724px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="724" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="883"
+          y="175"
+          width="31"
+          height="29"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 29px;
+                  height: 1px;
+                  padding-top: 190px;
+                  margin-left: 885px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font color="#00f269" style="font-size: 5px">5.3</font> <font
+                        color="#ffd608"
+                        style="font-size: 5px"
+                        >А</font
+                      ></font
+                    >
+                    <div style="font-size: 5px">
+                      <font color="#00f269">10.2</font> <font color="#ffd608">МВт</font>
+                    </div>
+                    <div style="font-size: 5px"><br /></div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="885" y="191" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              5.3 А...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="313"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="363"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="404"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="447"
+          y="72"
+          width="53"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="513"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="557"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="602"
+          y="72"
+          width="55"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="676"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="718"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="758"
+          y="72"
+          width="57"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="835"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="880"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="919"
+          y="72"
+          width="25"
+          height="93"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <rect
+          x="178.5"
+          y="226"
+          width="23"
+          height="22"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 21px;
+                  height: 1px;
+                  padding-top: 237px;
+                  margin-left: 181px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font color="#ffd608">АТ-1</font>
+                    <div><font color="#ffd608">125</font></div>
+                    <div>
+                      <font color="#ffd608">5 РПН<br /></font>
+                      <div style="font-size: 5px"><br /></div>
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="181" y="239" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              АТ-1...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="147"
+          y="244.5"
+          width="23"
+          height="22"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 21px;
+                  height: 1px;
+                  padding-top: 256px;
+                  margin-left: 149px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font color="#ffd608">АТ-2</font>
+                    <div><font color="#ffd608">125</font></div>
+                    <div>
+                      <font color="#ffd608">5 РПН<br /></font>
+                      <div style="font-size: 5px"><br /></div>
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="149" y="257" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              АТ-2...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="621"
+          y="226"
+          width="23"
+          height="22"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 21px;
+                  height: 1px;
+                  padding-top: 239px;
+                  margin-left: 623px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font color="#ffd608">АТ-1</font>
+                    <div><font color="#ffd608">125</font></div>
+                    <div>
+                      <font color="#ffd608">5 РПН<br /></font>
+                      <div style="font-size: 5px"><br /></div>
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="623" y="239" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              АТ-1...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="801"
+          y="228"
+          width="23"
+          height="22"
+          fill="none"
+          stroke="none"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 21px;
+                  height: 1px;
+                  padding-top: 239px;
+                  margin-left: 803px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font color="#ffd608">АТ-1</font>
+                    <div><font color="#ffd608">125</font></div>
+                    <div>
+                      <font color="#ffd608">5 РПН<br /></font>
+                      <div style="font-size: 5px"><br /></div>
+                    </div>
+                  </div>
+                </div></div
+            ></foreignObject>
+            <text x="803" y="241" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              АТ-1...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="669"
+          y="235"
+          width="39"
+          height="42"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 37px;
+                  height: 1px;
+                  padding-top: 256px;
+                  margin-left: 671px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font style="font-size: 5px" color="#ffd608">S </font
+                      ><font style="font-size: 5px" color="#ffd608">= </font
+                      ><font style="font-size: 5px" color="#00f269">{{ readings[2].s }}</font
+                      > <font color="#ffd608">ВА</font></font
+                    >
+                    <div>
+                      <font color="#ffd608">P </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[2].p }}</font
+                      > <span style="color: rgb(255, 214, 8)">Вт</span>
+                    </div>
+                    <div>
+                      <font color="#ffd608">Q </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[2].q }}</font
+                      > <font color="#ffd608">вар</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">U </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[2].u }}</font
+                      > <font color="#ffd608">В</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">I </font
+                      ><span style="color: rgb(255, 214, 8)">=</span> <font color="#00f269"
+                        >{{ readings[2].i }} </font
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">А</span>
+                    </div>
+                    <div>
+                      <span style="background-color: initial"><font color="#ffd608">cos</font></span
+                      ><span style="background-color: initial"
+                        ><font color="#ffd608">φ =</font> </span
+                      ><span style="color: rgb(0, 242, 105); background-color: initial"
+                        >{{ readings[2].cos }} </span
+                      ><span style="background-color: initial"> </span>
+                    </div>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text x="671" y="258" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              S = 0 ВА...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="862"
+          y="251"
+          width="39"
+          height="42"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 37px;
+                  height: 1px;
+                  padding-top: 272px;
+                  margin-left: 864px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font style="font-size: 5px" color="#ffd608">S </font
+                      ><font style="font-size: 5px" color="#ffd608">= </font
+                      ><font style="font-size: 5px" color="#00f269">{{ readings[3].s }}</font
+                      > <font color="#ffd608">ВА</font></font
+                    >
+                    <div>
+                      <font color="#ffd608">P </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[3].p }}</font
+                      > <span style="color: rgb(255, 214, 8)">Вт</span>
+                    </div>
+                    <div>
+                      <font color="#ffd608">Q </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[3].q }}</font
+                      > <font color="#ffd608">вар</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">U </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[3].u }}</font
+                      > <font color="#ffd608">В</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">I </font
+                      ><span style="color: rgb(255, 214, 8)">=</span> <font color="#00f269"
+                        >{{ readings[3].i }} </font
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">А</span>
+                    </div>
+                    <div>
+                      <span style="background-color: initial"><font color="#ffd608">cos</font></span
+                      ><span style="background-color: initial"
+                        ><font color="#ffd608">φ =</font> </span
+                      ><span style="color: rgb(0, 242, 105); background-color: initial"
+                        >{{ readings[3].cos }} </span
+                      ><span style="background-color: initial"> </span>
+                    </div>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text x="864" y="274" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              S = 0 ВА...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="225"
+          y="235"
+          width="39"
+          height="42"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 37px;
+                  height: 1px;
+                  padding-top: 256px;
+                  margin-left: 227px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font style="font-size: 5px" color="#ffd608">S </font
+                      ><font style="font-size: 5px" color="#ffd608">= </font
+                      ><font style="font-size: 5px" color="#00f269">{{ readings[1].s }}</font
+                      > <font color="#ffd608">ВА</font></font
+                    >
+                    <div>
+                      <font color="#ffd608">P </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[1].p }}</font
+                      > <span style="color: rgb(255, 214, 8)">Вт</span>
+                    </div>
+                    <div>
+                      <font color="#ffd608">Q </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[1].q }}</font
+                      > <font color="#ffd608">вар</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">U </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[1].u }}</font
+                      > <font color="#ffd608">В</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">I </font
+                      ><span style="color: rgb(255, 214, 8)">=</span> <font color="#00f269"
+                        >{{ readings[1].i }} </font
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">А</span>
+                    </div>
+                    <div>
+                      <span style="background-color: initial"><font color="#ffd608">cos</font></span
+                      ><span style="background-color: initial"
+                        ><font color="#ffd608">φ =</font> </span
+                      ><span style="color: rgb(0, 242, 105); background-color: initial"
+                        >{{ readings[1].cos }} </span
+                      ><span style="background-color: initial"> </span>
+                    </div>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text x="227" y="258" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              S = 0 ВА...
+            </text>
+          </switch>
+        </g>
+      </g>
+      <g>
+        <rect
+          x="82"
+          y="205"
+          width="39"
+          height="42"
+          fill="none"
+          stroke="rgb(0, 0, 0)"
+          pointer-events="all"
+        />
+      </g>
+      <g>
+        <g transform="translate(-0.5 -0.5)">
+          <switch>
+            <foreignObject
+              pointer-events="none"
+              width="100%"
+              height="100%"
+              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+              style="overflow: visible; text-align: left"
+              ><div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style="
+                  display: flex;
+                  align-items: unsafe center;
+                  justify-content: unsafe flex-start;
+                  width: 37px;
+                  height: 1px;
+                  padding-top: 226px;
+                  margin-left: 84px;
+                "
+              >
+                <div
+                  data-drawio-colors="color: rgb(0, 0, 0); "
+                  style="box-sizing: border-box; font-size: 0px; text-align: left"
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      font-size: 5px;
+                      font-family: Helvetica;
+                      color: rgb(0, 0, 0);
+                      line-height: 1.2;
+                      pointer-events: all;
+                      white-space: normal;
+                      overflow-wrap: normal;
+                    "
+                  >
+                    <font style="font-size: 5px"
+                      ><font style="font-size: 5px" color="#ffd608">S </font
+                      ><font style="font-size: 5px" color="#ffd608">= </font
+                      ><font style="font-size: 5px" color="#00f269">{{ readings[0].s }}</font
+                      > <font color="#ffd608">ВА</font></font
+                    >
+                    <div>
+                      <font color="#ffd608">P </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[0].p }}</font
+                      > <span style="color: rgb(255, 214, 8)">Вт</span>
+                    </div>
+                    <div>
+                      <font color="#ffd608">Q </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[0].q }}</font
+                      > <font color="#ffd608">вар</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">U </font><font color="#ffd608">= </font
+                      ><font color="#00f269">{{ readings[0].u }}</font
+                      > <font color="#ffd608">В</font>
+                    </div>
+                    <div>
+                      <font color="#ffd608">I </font
+                      ><span style="color: rgb(255, 214, 8)">=</span> <font color="#00f269"
+                        >{{ readings[0].i }} </font
+                      ><span style="color: rgb(255, 214, 8); background-color: initial">А</span>
+                    </div>
+                    <div>
+                      <span style="background-color: initial"><font color="#ffd608">cos</font></span
+                      ><span style="background-color: initial"
+                        ><font color="#ffd608">φ =</font> </span
+                      ><span style="color: rgb(0, 242, 105); background-color: initial"
+                        >{{ readings[0].cos }} </span
+                      ><span style="background-color: initial"> </span>
+                    </div>
+                  </div>
+                </div>
+              </div></foreignObject
+            >
+            <text x="84" y="228" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="5px">
+              S = 0 ВА...
+            </text>
+          </switch>
+        </g>
+      </g>
+    </g>
+    <switch>
+      <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" />
+      <a
+        transform="translate(0,-5)"
+        xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems"
+        target="_blank"
+      >
+        <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+          Text is not SVG - cannot display
+        </text>
+      </a>
+    </switch>
+  </svg>
+  <!-- </div> -->
+  <!-- </panZoom> -->
 </template>
 
 <style scoped>
@@ -4799,5 +10929,10 @@
   height: 700px;
   border: 1px solid black;
   overflow: hidden;
+}
+
+svg {
+  transform: scale(1.7);
+  z-index: 0;
 }
 </style>

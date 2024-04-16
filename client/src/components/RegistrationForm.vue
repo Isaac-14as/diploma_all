@@ -1,10 +1,8 @@
 <script setup>
-import { ref, reactive, watch, inject, onMounted } from 'vue'
+import { ref, reactive, watch, inject } from 'vue'
 import axios from 'axios'
 
 var API_port = import.meta.env.VITE_API_ENDPOINT
-
-
 
 const getAllUsersList = inject('getAllUsersList')
 
@@ -97,9 +95,6 @@ const createUser = async () => {
     responseError.value = err.response.data['detail']
   }
 }
-
-
-
 </script>
 
 <template>
