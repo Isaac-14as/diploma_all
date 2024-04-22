@@ -1,10 +1,5 @@
 import datetime
-from enum import Enum
 from pydantic import BaseModel
-
-class statusDevice(Enum):
-    good = "good"
-    broken = "broken"
 
 
 class DeviceBase(BaseModel):
@@ -53,3 +48,9 @@ class ExtremeValueCreate(ExtremeValueBase):
 class ExtremeValueGet(ExtremeValueBase):
     add_at: datetime.datetime
 
+
+class ManagementLogInfo(BaseModel):
+    info: str
+    action: str
+    user_id: int
+    device_id: int

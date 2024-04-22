@@ -75,6 +75,7 @@ class ManagementLog(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     info: Mapped[str]
+    action: Mapped[str]
     data_of_origin: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
     device_id: Mapped[int] = mapped_column(ForeignKey("device.id", ondelete="SET NULL"))

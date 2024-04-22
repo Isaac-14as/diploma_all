@@ -5,7 +5,7 @@ import { inject, ref, onMounted } from 'vue'
 var API_port = import.meta.env.VITE_API_ENDPOINT
 
 const access_token = inject('access_token')
-// const change_user = inject('change_user')
+const current_user = inject('current_user')
 
 const devices = ref([])
 const devices_all = ref([])
@@ -35,6 +35,7 @@ const deviceSwitchOff = async (id) => {
     device_change.is_active = false
     devices.value[devices.value.indexOf(devices.value.find((item) => item.id === id))] =
       device_change
+    modelInfoOn()
     return data
   } catch (err) {
     console.log(err)
@@ -53,6 +54,26 @@ const deviceTurnOn = async (id) => {
     device_change.is_active = true
     devices.value[devices.value.indexOf(devices.value.find((item) => item.id === id))] =
       device_change
+    modelInfoOn()
+    return data
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+const addManagementLog = async (device_id, action) => {
+  try {
+    const { data } = await axios({
+      method: 'post',
+      url: `http://` + API_port + `/device/add_management_log`,
+      headers: { Authorization: access_token.value },
+      data: {
+        info: info_test.value,
+        action: action,
+        user_id: current_user.value.id,
+        device_id: device_id
+      }
+    })
     return data
   } catch (err) {
     console.log(err)
@@ -85,11 +106,17 @@ const onChangeSearchInput = async () => {
   }
 }
 
-// const model_flag = ref(false)
-// const modelInfo = async () => {
-//   model_flag.value = !model_flag.value
-//   console.log(model_flag.value)
-// }
+const info_test = ref('')
+const device_action = ref('')
+const model_flag = ref(false)
+const modelInfo = async (device) => {
+  device_action.value = device
+  model_flag.value = !model_flag.value
+}
+
+const modelInfoOn = async () => {
+  model_flag.value = !model_flag.value
+}
 
 onMounted(() => getAllDevices())
 </script>
@@ -126,44 +153,83 @@ onMounted(() => getAllDevices())
         </div>
         <div class="option" v-if="device_i.type == 'трансформатор'">Показания</div>
         <div
-          @click="deviceSwitchOff(device_i.id)"
+          @click="modelInfo(device_i)"
           class="option"
           v-if="device_i.type === 'разъединитель' && device_i.is_active"
         >
           Выключить
         </div>
         <div
-          @click="deviceTurnOn(device_i.id)"
+          @click="modelInfo(device_i)"
           class="option"
           v-if="device_i.type === 'разъединитель' && !device_i.is_active"
         >
           Включить
         </div>
-
-        <!-- <div @click="deleteUser(user_i.id)" class="delete">Удалить</div>
-        <div @click="[changeUser(user_i.id, user_i.name, user_i.role), changePage()]" class="patch">
-          Изменить
-        </div> -->
       </div>
     </div>
   </div>
-  <!-- <div class="but" @click="modelInfo">12321123123123123</div>
   <div v-if="model_flag" class="blur"></div>
   <div v-if="model_flag" class="model_window">
     <div class="title_model">
       Причинана
-      <p>включения</p>
-      <p>выключения</p>
+      <p v-if="device_action.is_active">выключения</p>
+      <p v-else>включения</p>
       <p>устройства</p>
-      <p>"</p>
-      <p>устройства</p>
-      <p>"</p>
-      :
+      <p>"{{ device_action.name }}":</p>
     </div>
-  </div> -->
+    <textarea
+      class="test_info"
+      placeholder="Опишите причину действия..."
+      v-model="info_test"
+    ></textarea>
+    <div class="button_box">
+      <button @click="modelInfoOn">Отмена</button>
+      <button
+        v-if="device_action.is_active"
+        @click="
+          [deviceSwitchOff(device_action.id), addManagementLog(device_action.id, 'Выключение')]
+        "
+      >
+        Выключить
+      </button>
+      <button
+        v-else
+        @click="[deviceTurnOn(device_action.id), addManagementLog(device_action.id), 'Включение']"
+      >
+        Включить
+      </button>
+    </div>
+  </div>
+  <div v-if="devices.length > 5 && devices[5].is_active">123123</div>
 </template>
 
 <style scoped>
+.button_box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+button {
+  border-radius: 8px;
+  background: #009485;
+  padding: 15px;
+  font-size: 17px;
+  transition: 0.2s;
+  color: white;
+}
+
+button:hover {
+  background: #04786c;
+  transition: 0.2s;
+  transition: 0.2s;
+}
+button:disabled {
+  background: #5f6464;
+  transition: 0.2s;
+  transition: 0.2s;
+}
 .model_window {
   position: absolute;
   left: 33%;
@@ -173,16 +239,44 @@ onMounted(() => getAllDevices())
   background: #1c1c1c;
   border: #009485 solid 2px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
+  /* justify-content: center; */
 }
 /* .info_option {
   width: 80%;
   height: 100px;
   color: #1c1c1c;
 } */
+
+.test_info {
+  padding: 10px;
+  width: 85%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.test_info:hover {
+  border: 2px solid #009485;
+}
+
+.test_info:focus {
+  outline: #009485;
+  border-color: #009485;
+}
+
 .title_model {
   color: white;
-  /* background: #009485; */
+  background: #009485;
   text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 .title_model p {
   display: inline;

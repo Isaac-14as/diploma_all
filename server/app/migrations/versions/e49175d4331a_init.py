@@ -70,6 +70,7 @@ def upgrade() -> None:
         "management_log",
         sa.Column("id", sa.Integer(), nullable=False),
         sa.Column("info", sa.String(), nullable=False),
+        sa.Column("action", sa.String(), nullable=False),
         sa.Column(
             "data_of_origin",
             sa.DateTime(),

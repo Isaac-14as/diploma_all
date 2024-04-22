@@ -12,6 +12,12 @@ class SUserBase(BaseModel):
     name: str
     role: str
 
+class SUserBaseI(BaseModel):
+    id: int
+    email: EmailStr
+    name: str
+    role: str
+
 class SUserBaseId(BaseModel):
     id: int
     email: EmailStr

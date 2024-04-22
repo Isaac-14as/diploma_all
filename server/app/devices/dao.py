@@ -1,5 +1,5 @@
 from app.dao.base import BaseDAO
-from app.devices.models import Device, ValueDevice
+from app.devices.models import Device, ValueDevice, ManagementLog
 from app.database import async_session_maker
 
 
@@ -18,3 +18,7 @@ class ValueDeviceDAO(BaseDAO):
             query = select(ValueDevice).filter_by(date_of_collection=max_date_of_collection)
             result = await session.execute(query)
             return result.scalar_one_or_none()
+        
+
+class ManagementLogDAO(BaseDAO):
+    model = ManagementLog

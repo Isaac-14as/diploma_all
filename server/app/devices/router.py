@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends
 
-from app.devices.dao import DevaceDAO, ValueDeviceDAO
+from app.devices.dao import DevaceDAO, ManagementLogDAO, ValueDeviceDAO
 from app.devices.schemas import *
 from app.users.dependencies import get_current_user
 
@@ -68,6 +68,19 @@ async def device_turn_on(device_id: int):
         }
     await DevaceDAO.change_by_id(device_id, **device)
     return {'status': 200, 'detail': 'Устройство включено.'}
+
+
+@router.post('/add_management_log', dependencies=[Depends(get_current_user)])
+async def add_management_log(management_log_info: ManagementLogInfo):
+    await ManagementLogDAO.add(**management_log_info.model_dump())
+    return {'status': 200, 'detail': 'Запиь успешно добавлена.'}
+
+
+@router.post('/get_all_management_log', response_model=list[ManagementLogInfo], dependencies=[Depends(get_current_user)])
+async def get_all_management_log():
+    management_log = await ManagementLogDAO.find_all()
+    return management_log
+
 
 # доделать
 # @router.get('/get_last_extreme_value_by_id', response_model=, dependencies=[Depends(get_current_user)])

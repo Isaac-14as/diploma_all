@@ -5,7 +5,7 @@ from app.users.models import Users
 from app.exceptions import *
 from app.users.auth import authenticate_user, create_access_token, get_password_hash
 from app.users.dao import UsersDAO
-from app.users.schemas import SUser, SUserAuth, SUserBase, SUserBaseId, SUserDB, SUserLogin
+from app.users.schemas import SUser, SUserAuth, SUserBase, SUserBaseI, SUserBaseId, SUserDB, SUserLogin
 
 
 # from fastapi import APIRouter, Depends, Response
@@ -48,7 +48,7 @@ async def logout_user(response: Response):
     return {'status': 200, 'detail': 'ОК'}
 
 
-@router.get('/me', response_model=SUserBase)
+@router.get('/me', response_model=SUserBaseI)
 async def read_users_me(current_user: Users = Depends(get_current_user)):
     return current_user
 
