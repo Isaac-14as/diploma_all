@@ -24,7 +24,7 @@ class ValueDeviceGet(ValueDeviceBase):
 
 class DeviceBaseGet(DeviceBase):
     id: int
-    value_device: list[ValueDeviceGet]
+    # value_device: list[ValueDeviceGet]
 
 
 

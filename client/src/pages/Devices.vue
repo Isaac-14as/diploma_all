@@ -201,7 +201,7 @@ onMounted(() => getAllDevices())
       </button>
     </div>
   </div>
-  <div v-if="devices.length > 5 && devices[5].is_active">123123</div>
+  <!-- <div v-if="devices.length > 5 && devices[5].is_active">123123</div> -->
 </template>
 
 <style scoped>
@@ -242,8 +242,6 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* align-content: center; */
-  /* justify-content: center; */
 }
 /* .info_option {
   width: 80%;

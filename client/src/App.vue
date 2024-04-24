@@ -1,8 +1,10 @@
 <script setup>
-import { ref, provide } from 'vue'
+import { ref, provide, onMounted } from 'vue'
 
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
+
+import { useRouter } from 'vue-router'
 
 const current_user = ref('')
 const access_token = ref('')
@@ -18,6 +20,15 @@ provide('access_token', access_token)
 
 provide('sidebar_flag', sidebar_flag)
 
+const router = useRouter()
+
+const routerPush = async () => {
+  if (access_token.value) {
+    router.push('/mnemo')
+  }
+}
+
+onMounted(routerPush)
 // import panZoom from 'vue-panzoom'
 </script>
 

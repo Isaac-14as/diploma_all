@@ -29,7 +29,7 @@ const sidebarChange = () => {
   width: 300px;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 200;
 }
 .sidebar_link {
   color: aliceblue;
