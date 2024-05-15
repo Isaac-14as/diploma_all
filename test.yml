@@ -1,41 +1,50 @@
 config:
-  target: 'http://localhost:8000/'
+  target: "http://localhost:8000"
   phases:
-    
-duration: 60 #   
-    arrivalRate: 5 # 
-    name: Warm up
-duration: 60
-  arrivalRate: 10
-  rampTo: 20
-  name: Ramp up load
-duration: 60
-arrivalRate: 20
-name: Sustained load
-payload:
-path: users.csv
-  fields:
-"email"
-"password"
+    - duration: 60
+      arrivalRate: 2
+      name: Warm up
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 20
+      name: Ramp up load
+    - duration: 60
+      arrivalRate: 20
+      name: Sustained load
+  payload:
+    - path: users.csv
+      fields:
+        - "email"
+        - "password"
 scenarios:
-  
-name: Auth scenario
-flow:
-  post:
-        url: '/auth/login'
-        json:
-          username: '{{ email }}'
-          password: '{{ password }}'
-  get:
-    url: '/auth/me'
-      headers:
-        Authorization: '{{ token }}'
-name: Device scenario
-flow:
-  get:
-    url: '/device/get_all_device'
-      headers:
-        Authorization: '{{ token }}'
+  - name: Auth scenario
+    flow:
+      - post:
+          url: "/auth/login"
+          json:
+            email: "{{ email }}"
+            password: "{{ password }}"
+      - post:
+          url: "/auth/logout"
+      # - get:
+      #     url: "/auth/me"
+      #     headers:
+      #       Authorization: "{{ token }}"
+
+  # - name: Products List scenario
+  #   flow:
+  #     - get:
+  #         url: '/api/ProductsList'
+  # - name: Provider scenario
+  #   flow:
+  #     - get:
+  #         url: '/api/provider'
+# name: Device scenario
+# flow:
+#   get:
+#     url: '/device/get_all_device'
+#       headers:
+#         Authorization: '{{ token }}'
 
 # get:
 #     url: '/api/auth/me'

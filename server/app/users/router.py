@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, Response
+from fastapi import APIRouter, Depends, Response, Request
 import json
 from app.users.dependencies import get_current_user, is_admin_user
 from app.users.models import Users
@@ -33,14 +33,14 @@ async def register_user(user_data: SUserAuth):
     return {'status': 200, 'detail': 'Пользователь успешно зарегистрирован'}
 
 @router.post('/login')
-async def login_user(user_data: SUserLogin, response: Response):
+async def login_user(user_data: SUserLogin):
     user = await authenticate_user(user_data.email, user_data.password)
     if not user:
         raise IncorrectEmailOrPasswordException
     access_token = create_access_token({'sub': str(user.id)})
-    # response.set_cookie("app_access_token", access_token, httponly=True, max_age=3600, samesite=None, secure=True)
-    response.set_cookie("app_access_token", access_token)
+    # response.set_cookie("app_access_token", access_token)
     return {'access_token': access_token}
+
 
 @router.post('/logout')
 async def logout_user(response: Response):
