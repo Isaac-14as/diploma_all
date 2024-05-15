@@ -1,4 +1,4 @@
-from fastapi import Depends, Request, HTTPException, status
+from fastapi import Depends, Request
 from jose import jwt, JWTError
 from datetime import datetime
 

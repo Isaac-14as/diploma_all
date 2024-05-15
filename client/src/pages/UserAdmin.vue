@@ -1,7 +1,6 @@
 <script setup>
 import axios from 'axios'
 import { inject, ref, reactive, provide } from 'vue'
-
 import UsersList from '@/components/UsersList.vue'
 import RegistrationForm from '@/components/RegistrationForm.vue'
 import ChangeUserForm from '@/components/ChangeUserForm.vue'
@@ -19,7 +18,6 @@ const all_users = ref([])
 const users = ref([])
 
 const getAllUsersList = async () => {
-  console.log('Функция из родительского компонента')
   if (access_token) {
     try {
       const { data } = await axios.get(`http://` + API_port + `/auth/all_users`, {
@@ -65,7 +63,6 @@ const change_page = () => {
 .main_box {
   display: flex;
 }
-
 .flag {
   border-radius: 8px;
   background: #009485;
@@ -83,7 +80,6 @@ const change_page = () => {
 
 .flag:hover {
   background: #04786c;
-  transition: 0.2s;
   transition: 0.2s;
 }
 </style>

@@ -14,9 +14,17 @@ const sidebarChange = () => {
       <img src="/devices.png" alt="" class="icon" />
       <div class="sidebar_link">Устройства</div>
     </router-link>
-    <router-link to="/mnemo" class="sidebar_box" @click="sidebarChange">
+    <router-link to="/graph" class="sidebar_box" @click="sidebarChange">
       <img src="/graph.png" alt="" class="icon" />
       <div class="sidebar_link">Графики</div>
+    </router-link>
+    <router-link to="/management_log" class="sidebar_box" @click="sidebarChange">
+      <img src="/control.png" alt="" class="icon" />
+      <div class="sidebar_link">Журнал управления</div>
+    </router-link>
+    <router-link to="/accident_log" class="sidebar_box" @click="sidebarChange">
+      <img src="/accident.png" alt="" class="icon" />
+      <div class="sidebar_link">Аварийные ситуации</div>
     </router-link>
   </div>
 </template>
@@ -25,7 +33,7 @@ const sidebarChange = () => {
 .sidebar {
   position: absolute;
   background: #1c1c1c;
-  height: 80%;
+  /* height: 80%; */
   width: 300px;
   display: flex;
   flex-direction: column;

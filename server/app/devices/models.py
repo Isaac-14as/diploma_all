@@ -18,15 +18,20 @@ class Device(Base):
         lazy="selectin"
     )
 
-    extreme_value: Mapped[list["ExtremeValue"]] = relationship(
-        back_populates="device",
-        lazy="selectin"
-    )
-
     management_log: Mapped[list["ManagementLog"]] = relationship(
         back_populates="device",
         lazy="selectin"
     )
+    
+    accident_log: Mapped[list["AccidentLog"]] = relationship(
+        back_populates="device",
+        lazy="selectin"
+    )
+
+    # extreme_value: Mapped[list["ExtremeValue"]] = relationship(
+    #     back_populates="device",
+    #     lazy="selectin"
+    # )
 
 
 class ValueDevice(Base):
@@ -47,28 +52,7 @@ class ValueDevice(Base):
     )
     
 
-class ExtremeValue(Base):
-    __tablename__ = 'extreme_value'
 
-    id: Mapped[int] = mapped_column(primary_key=True)
-    min_full_power: Mapped[float | None]
-    max_full_power: Mapped[float | None]
-    min_active_power: Mapped[float | None]
-    max_active_power: Mapped[float | None]
-    min_reactive_power: Mapped[float | None]
-    max_reactive_power: Mapped[float | None]
-    min_voltage: Mapped[float | None]
-    max_voltage: Mapped[float | None]
-    min_amperage: Mapped[float | None]
-    max_amperage: Mapped[float | None]
-    min_power_factor: Mapped[float | None]
-    max_power_factor: Mapped[float | None]
-    add_at: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
-    device_id: Mapped[int] = mapped_column(ForeignKey("device.id", ondelete="CASCADE"))
-
-    device: Mapped["Device"] = relationship(
-        back_populates='extreme_value'
-    )
 
 class ManagementLog(Base):
     __tablename__ = 'management_log'
@@ -76,15 +60,54 @@ class ManagementLog(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     info: Mapped[str]
     action: Mapped[str]
-    data_of_origin: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
+    date_of_origin: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
     device_id: Mapped[int] = mapped_column(ForeignKey("device.id", ondelete="SET NULL"))
 
     users: Mapped["Users"] = relationship(
-        back_populates='management_log'
+        back_populates='management_log',
+        lazy="selectin"
     )
 
     device: Mapped["Device"] = relationship(
-        back_populates='management_log'
+        back_populates='management_log',
+        lazy="selectin"
     )
 
+
+class AccidentLog(Base):
+    __tablename__ = 'accident_log'
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    info: Mapped[str]
+    date_of_origin: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
+    device_id: Mapped[int] = mapped_column(ForeignKey("device.id", ondelete="SET NULL"))
+
+    device: Mapped["Device"] = relationship(
+        back_populates='accident_log',
+        lazy="selectin"
+    )
+
+
+# class ExtremeValue(Base):
+#     __tablename__ = 'extreme_value'
+
+#     id: Mapped[int] = mapped_column(primary_key=True)
+#     min_full_power: Mapped[float | None]
+#     max_full_power: Mapped[float | None]
+#     min_active_power: Mapped[float | None]
+#     max_active_power: Mapped[float | None]
+#     min_reactive_power: Mapped[float | None]
+#     max_reactive_power: Mapped[float | None]
+#     min_voltage: Mapped[float | None]
+#     max_voltage: Mapped[float | None]
+#     min_amperage: Mapped[float | None]
+#     max_amperage: Mapped[float | None]
+#     min_power_factor: Mapped[float | None]
+#     max_power_factor: Mapped[float | None]
+#     add_at: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
+#     device_id: Mapped[int] = mapped_column(ForeignKey("device.id", ondelete="CASCADE"))
+
+#     device: Mapped["Device"] = relationship(
+#         back_populates='extreme_value'
+#     )

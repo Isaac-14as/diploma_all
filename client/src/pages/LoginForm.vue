@@ -220,7 +220,6 @@ button:disabled {
 }
 
 form {
-  /* background: #3bb4b4; */
   margin: 0 auto;
   margin-top: 200px;
 }

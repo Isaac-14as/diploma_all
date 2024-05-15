@@ -6,7 +6,7 @@ services:
     env_file:
       - ./server/.env-non-dev
     ports:
-      - 5432:5432
+      - 5434:5432
     # network: host
 
   server:
@@ -34,4 +34,13 @@ services:
       - 9000:9000
     depends_on:
       - server
+    # network: host
+
+  generator:
+    image: generator_image
+    build:
+      context: ./generator/
+    # container_name: client_app
+    depends_on:
+      - db
     # network: host

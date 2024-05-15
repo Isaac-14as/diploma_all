@@ -2,6 +2,16 @@
 import axios from 'axios'
 import { inject, ref, onMounted } from 'vue'
 
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const routerPush = async (id) => {
+  if (access_token.value) {
+    router.push('/device_value/' + id.toString())
+  }
+}
+
 var API_port = import.meta.env.VITE_API_ENDPOINT
 
 const access_token = inject('access_token')
@@ -151,7 +161,13 @@ onMounted(() => getAllDevices())
           <div class="is_active" v-if="device_i.is_active">включен</div>
           <div class="is_active" v-else>выключен</div>
         </div>
-        <div class="option" v-if="device_i.type == 'трансформатор'">Показания</div>
+        <div
+          class="option"
+          v-if="device_i.type == 'трансформатор'"
+          @click="routerPush(device_i.id)"
+        >
+          Показания
+        </div>
         <div
           @click="modelInfo(device_i)"
           class="option"
@@ -201,7 +217,6 @@ onMounted(() => getAllDevices())
       </button>
     </div>
   </div>
-  <!-- <div v-if="devices.length > 5 && devices[5].is_active">123123</div> -->
 </template>
 
 <style scoped>
@@ -243,11 +258,6 @@ button:disabled {
   flex-direction: column;
   align-items: center;
 }
-/* .info_option {
-  width: 80%;
-  height: 100px;
-  color: #1c1c1c;
-} */
 
 .test_info {
   padding: 10px;
@@ -295,11 +305,8 @@ button:disabled {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
-  /* background: #000; */
 }
 .title {
-  /* display: flex;
-  justify-content: center; */
   padding-left: 20px;
   margin-bottom: 10px;
   font-size: 20px;
@@ -324,8 +331,6 @@ button:disabled {
 }
 
 .list_main {
-  /* background: #52beb2; */
-  /* width: 1000px; */
   width: 65%;
   margin-left: 25px;
   color: white;
@@ -351,7 +356,6 @@ button:disabled {
 .box {
   display: flex;
   height: 30px;
-  /* background: #d88daf; */
   border: 1px solid white;
   border-radius: 5px;
   align-items: center;
@@ -360,8 +364,6 @@ button:disabled {
 }
 .info {
   display: flex;
-  /* background: #c57474; */
-  /* width: 700px; */
 }
 
 .id {
@@ -371,19 +373,16 @@ button:disabled {
 }
 .name {
   width: 320px;
-  /* background: #5bc548; */
   padding-left: 10px;
   border-right: 1px solid white;
 }
 .type {
   width: 250px;
-  /* background: #4852c5; */
   padding-left: 10px;
   border-right: 1px solid white;
 }
 .status {
   width: 150px;
-  /* background: #c5b748; */
   padding-left: 10px;
 }
 
@@ -405,19 +404,15 @@ button:disabled {
   transition: 0.1s;
 }
 
-/* Define the scrollbar style */
 .list::-webkit-scrollbar {
   width: 3px;
   height: 15px;
 }
 
-/* Define the thumb style */
 .list::-webkit-scrollbar-thumb {
   background: #009485;
   border-radius: 1px;
 }
-
-/* Define the track style */
 .list::-webkit-scrollbar-track:vertical {
   background-color: rgb(69, 67, 67);
   box-shadow: inset 0 0 2px 2px rgb(87, 86, 86);

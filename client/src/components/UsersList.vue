@@ -35,7 +35,6 @@ const search_text = ref('')
 
 // поиск (работает на стороне клиента)
 const onChangeSearchInput = async () => {
-  // console.log(search_text.value)
   let user_search = []
 
   if (search_text.value === '') {
@@ -67,27 +66,6 @@ const changeUser = async (id, name, role) => {
   change_user.name = name
   change_user.role = role
 }
-
-// странно, что не используется
-
-// const patch_user = async () => {
-//   console.log('Изменяю пользователя', editable_user.id)
-//   try {
-//     const { data } = await axios({
-//       method: 'patch',
-//       url: `http://` + API_port + `/auth/change_user/${editable_user.id}`,
-//       data: {
-//         name: editable_user.name,
-//         role: editable_user.role
-//       },
-//       headers: { Authorization: access_token.value }
-//     })
-//     await getAllUsersList()
-//     return data
-//   } catch (err) {
-//     console.log(err)
-//   }
-// }
 
 onMounted(() => getAllUsersList())
 </script>

@@ -37,7 +37,9 @@ const sidebarChange = () => {
     <div class="left_nav_menu">
       <img src="/icons8-menu.svg" alt="" class="sidebar" @click="sidebarChange" />
       <router-link to="/mnemo" class="left_link">Мнемосхема</router-link>
-      <router-link to="/user_admin" class="left_link">Управление пользователями</router-link>
+      <router-link v-if="current_user.role === 'admin'" to="/user_admin" class="left_link"
+        >Управление пользователями</router-link
+      >
     </div>
 
     <!-- <div class="nav_menu">234234</div> -->

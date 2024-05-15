@@ -146,34 +146,34 @@ onMounted(() => getAllDevices())
     <!-- <MnemonicDiagram /> -->
     <img src="/mnemo.svg" class="mnemo_img" alt="" />
     <div class="value_box v1">
-      <p><span>S =</span> {{ readings[0].s }} <span>ВА</span></p>
-      <p><span>P =</span> {{ readings[0].p }} <span>Вт</span></p>
-      <p><span>Q =</span> {{ readings[0].q }} <span>вар</span></p>
-      <p><span>U =</span> {{ readings[0].u }} <span>В</span></p>
+      <p><span>S =</span> {{ readings[0].s }} <span>МВА</span></p>
+      <p><span>P =</span> {{ readings[0].p }} <span>МВт</span></p>
+      <p><span>Q =</span> {{ readings[0].q }} <span>МВАр</span></p>
+      <p><span>U =</span> {{ readings[0].u }} <span>кВ</span></p>
       <p><span>I =</span> {{ readings[0].i }} <span>А</span></p>
       <p><span>cosφ =</span> {{ readings[0].cos }}</p>
     </div>
     <div class="value_box v2">
-      <p><span>S =</span> {{ readings[1].s }} <span>ВА</span></p>
-      <p><span>P =</span> {{ readings[1].p }} <span>Вт</span></p>
-      <p><span>Q =</span> {{ readings[1].q }} <span>вар</span></p>
-      <p><span>U =</span> {{ readings[1].u }} <span>В</span></p>
+      <p><span>S =</span> {{ readings[1].s }} <span>МВА</span></p>
+      <p><span>P =</span> {{ readings[1].p }} <span>МВт</span></p>
+      <p><span>Q =</span> {{ readings[1].q }} <span>МВАр</span></p>
+      <p><span>U =</span> {{ readings[1].u }} <span>кВ</span></p>
       <p><span>I =</span> {{ readings[1].i }} <span>А</span></p>
       <p><span>cosφ =</span> {{ readings[1].cos }}</p>
     </div>
     <div class="value_box v3">
-      <p><span>S =</span> {{ readings[2].s }} <span>ВА</span></p>
-      <p><span>P =</span> {{ readings[2].p }} <span>Вт</span></p>
-      <p><span>Q =</span> {{ readings[2].q }} <span>вар</span></p>
-      <p><span>U =</span> {{ readings[2].u }} <span>В</span></p>
+      <p><span>S =</span> {{ readings[2].s }} <span>МВА</span></p>
+      <p><span>P =</span> {{ readings[2].p }} <span>МВт</span></p>
+      <p><span>Q =</span> {{ readings[2].q }} <span>МВАр</span></p>
+      <p><span>U =</span> {{ readings[2].u }} <span>кВ</span></p>
       <p><span>I =</span> {{ readings[2].i }} <span>А</span></p>
       <p><span>cosφ =</span> {{ readings[2].cos }}</p>
     </div>
     <div class="value_box v4">
-      <p><span>S =</span> {{ readings[3].s }} <span>ВА</span></p>
-      <p><span>P =</span> {{ readings[3].p }} <span>Вт</span></p>
-      <p><span>Q =</span> {{ readings[3].q }} <span>вар</span></p>
-      <p><span>U =</span> {{ readings[3].u }} <span>В</span></p>
+      <p><span>S =</span> {{ readings[3].s }} <span>МВА</span></p>
+      <p><span>P =</span> {{ readings[3].p }} <span>МВт</span></p>
+      <p><span>Q =</span> {{ readings[3].q }} <span>МВАр</span></p>
+      <p><span>U =</span> {{ readings[3].u }} <span>кВ</span></p>
       <p><span>I =</span> {{ readings[3].i }} <span>А</span></p>
       <p><span>cosφ =</span> {{ readings[3].cos }}</p>
     </div>
@@ -743,14 +743,12 @@ onMounted(() => getAllDevices())
   position: relative;
   width: 1650px;
   height: 830px;
-  /* background-color: #f2a42f; */
-  border: 2px solid black;
+  border: 2px solid #333333;
   display: flex;
 }
 
 .value_box {
-  border: 2px solid black;
-  width: 100px;
+  width: 103px;
   z-index: 2;
   padding: 2px;
   font-size: 13px;
